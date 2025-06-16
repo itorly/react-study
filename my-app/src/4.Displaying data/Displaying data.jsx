@@ -6,6 +6,9 @@ const user = {
   imageSize: 100,
 };
 
+// style={{}} is not a special syntax, 
+// but a regular {} object inside the style={ } JSX curly braces. 
+// You can use the style attribute when your styles depend on JavaScript variables.
 export default function Profile() {
   return (
     <>
