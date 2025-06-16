@@ -1,5 +1,5 @@
 import './Adding styles.css'
-import imgExample from './img/smile.jpg'
+import imgExample from '../img/smile.jpg'
 
 function MyImg() {
   return (
