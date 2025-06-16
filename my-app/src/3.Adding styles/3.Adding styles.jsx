@@ -10,7 +10,7 @@ function MyImg() {
 export default function AddingStyles() {
     return (
       <div>
-        <h1>3. Writing markup with JSX</h1>
+        <h1>3. Adding styles</h1>
         <MyImg />
       </div>
     );

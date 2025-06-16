@@ -18,8 +18,10 @@ function MyButton() {
 export default function MyApp() {
   return (
     <div>
-      <h1>Welcome to the 1st part in Quick Start: 
-        <br></br>Creating and nesting components
+      <h1>Welcome to the Quick Start of React 
+        <br></br>
+        <br></br>
+        1. Creating and nesting components
       </h1>
       <MyButton />
     </div>

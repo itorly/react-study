@@ -5,6 +5,7 @@ import MyApp from './1.Creating and nesting components/1.Creating and nesting co
 import AboutPage from './2.Writing markup with JSX/2.Writing markup with JSX.jsx'
 import AddingStyles from './3.Adding styles/3.Adding styles.jsx'
 import Profile from './4.Displaying data/Displaying data.jsx'
+import ConditionalRendering from './5.Conditional rendering/Conditional rendering.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -12,5 +13,6 @@ createRoot(document.getElementById('root')).render(
     <AboutPage />
     <AddingStyles />
     <Profile />
+    <ConditionalRendering />
   </StrictMode>,
 )
