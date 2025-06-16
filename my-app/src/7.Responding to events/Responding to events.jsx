@@ -4,6 +4,7 @@ function MyButton() {
   }
 
   return (
+    // Notice how onClick={handleClick} has no parentheses at the end!
     <button onClick={handleClick}>
       Click me
     </button>

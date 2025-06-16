@@ -8,6 +8,7 @@ import Profile from './4.Displaying data/Displaying data.jsx'
 import ConditionalRendering from './5.Conditional rendering/Conditional rendering.jsx'
 import RenderingLists from './6.Rendering lists/Rendering lists.jsx'
 import RespondingToEvents from './7.Responding to events/Responding to events.jsx'
+import UpdatingTheScreen from './8.Updating the screen/Updating the screen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,5 +19,6 @@ createRoot(document.getElementById('root')).render(
     <ConditionalRendering />
     <RenderingLists />
     <RespondingToEvents />
+    <UpdatingTheScreen />
   </StrictMode>,
 )
