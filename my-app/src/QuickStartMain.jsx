@@ -9,6 +9,7 @@ import ConditionalRendering from './5.Conditional rendering/Conditional renderin
 import RenderingLists from './6.Rendering lists/Rendering lists.jsx'
 import RespondingToEvents from './7.Responding to events/Responding to events.jsx'
 import UpdatingTheScreen from './8.Updating the screen/Updating the screen.jsx'
+import SharingDataBetweenComponents from './10.Sharing data between components/Sharing data between components.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')).render(
     <RenderingLists />
     <RespondingToEvents />
     <UpdatingTheScreen />
+    <SharingDataBetweenComponents />
   </StrictMode>,
 )
