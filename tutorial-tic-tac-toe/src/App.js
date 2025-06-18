@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
 export default function Game() {
-  const [xIsNext, setXIsNext] = useState(true);
   const [history, setHistory] = useState([Array(9).fill(null)]);
   // Before you can implement the jumpTo function, 
   // you need the Game component to keep track of which step the user is currently viewing. 
   // To do this, define a new state variable called currentMove, defaulting to 0:
   const [currentMove, setCurrentMove] = useState(0);
+  const xIsNext = currentMove % 2 === 0;
   // modify the Game component to render the currently selected move
   const currentSquares = history[currentMove];
 
@@ -22,12 +22,10 @@ export default function Game() {
     const nextHistory = [...history.slice(0, currentMove + 1), nextSquares];
     setHistory(nextHistory);
     setCurrentMove(nextHistory.length - 1);
-    setXIsNext(!xIsNext);
   }
 
   function jumpTo(nextMove) {
     setCurrentMove(nextMove);
-    setXIsNext(nextMove % 2 === 0);
   }
 
   // As you iterate through the history array inside the function you passed to map, 
