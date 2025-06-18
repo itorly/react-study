@@ -15,7 +15,8 @@ export default function Game() {
   }
 
   function jumpTo(nextMove) {
-    // TODO
+    setCurrentMove(nextMove);
+    setXIsNext(nextMove % 2 === 0);
   }
 
   // As you iterate through the history array inside the function you passed to map, 
