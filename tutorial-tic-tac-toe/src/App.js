@@ -7,7 +7,8 @@ export default function Game() {
   // you need the Game component to keep track of which step the user is currently viewing. 
   // To do this, define a new state variable called currentMove, defaulting to 0:
   const [currentMove, setCurrentMove] = useState(0);
-  const currentSquares = history[history.length - 1];
+  // modify the Game component to render the currently selected move
+  const currentSquares = history[currentMove];
 
   // the Game’s handlePlay function is called when you click on a square.
 
