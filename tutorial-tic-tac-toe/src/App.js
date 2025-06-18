@@ -41,8 +41,9 @@ function Board({ xIsNext, squares, onPlay }) {
     } else {
       nextSquares[i] = "O";
     }
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
+    // replace the setSquares and setXIsNext calls in handleClick in the Board component with a single call to your new onPlay function 
+    // so the Game component can update the Board when the user clicks a square
+    onPlay(nextSquares);
   }
 
   const winner = calculateWinner(squares);
