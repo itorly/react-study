@@ -26,6 +26,14 @@ export default function Board() {
     setXIsNext(!xIsNext);
   }
 
+  const winner = calculateWinner(squares);
+  let status;
+  if (winner) {
+    status = "Winner: " + winner;
+  } else {
+    status = "Next player: " + (xIsNext ? "X" : "O");
+  }
+
   // When you were passing onSquareClick={handleClick}, you were passing the handleClick function down as a prop.
   // When you were passing onSquareClick={handleClick(0)}, you were calling that function right away—notice the parentheses in handleClick(0)—and that’s why it runs too early.
 
@@ -34,6 +42,7 @@ export default function Board() {
   // When the square is clicked, the code after the => “arrow” will run, calling handleClick(0).
   return (
     <>
+      <div className="status">{status}</div>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
