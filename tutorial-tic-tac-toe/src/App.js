@@ -14,6 +14,9 @@ export default function Game() {
     // TODO
   }
 
+  // As you iterate through the history array inside the function you passed to map, 
+  // the squares argument goes through each element of history, 
+  // and the move argument goes through each array index: 0, 1, 2, ...
   const moves = history.map((squares, move) => {
     let description;
     if (move > 0) {
@@ -22,7 +25,8 @@ export default function Game() {
       description = 'Go to game start';
     }
     return (
-      <li>
+      // add the key as <li key={move}>
+      <li key={move}>
         <button onClick={() => jumpTo(move)}>{description}</button>
       </li>
     );
