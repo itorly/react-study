@@ -67,7 +67,12 @@ function ProductTable({ products, filterText, inStockOnly }) {
   );
 }
 
-function SearchBar({ filterText, inStockOnly }) {
+function SearchBar({ 
+  filterText, 
+  inStockOnly, 
+  onFilterTextChange, 
+  onInStockOnlyChange
+}) {
   return (
     <form>
       <input 
@@ -85,6 +90,18 @@ function SearchBar({ filterText, inStockOnly }) {
   );
 }
 
+/**
+ * Add inverse data flow
+ * 
+ * You want to make it so whenever the user changes the form inputs,
+ * the state updates to reflect those changes. 
+ * 
+ * The state is owned by FilterableProductTable, 
+ * so only it can call setFilterText and setInStockOnly.
+ * 
+ * To let SearchBar update the FilterableProductTable’s state, 
+ * you need to pass these functions down to SearchBar:
+ */
 function FilterableProductTable({ products }) {
   const [filterText, setFilterText] = useState('');
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -93,7 +110,9 @@ function FilterableProductTable({ products }) {
     <div>
       <SearchBar 
         filterText={filterText} 
-        inStockOnly={inStockOnly} />
+        inStockOnly={inStockOnly} 
+        onFilterTextChange={setFilterText}
+        onInStockOnlyChange={setInStockOnly}/>
       <ProductTable 
         products={products}
         filterText={filterText}
