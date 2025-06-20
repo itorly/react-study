@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 function ProductCategoryRow({ category }) {
   return (
     <tr>
@@ -69,6 +71,9 @@ function SearchBar() {
 }
 
 function FilterableProductTable({ products }) {
+  const [filterText, setFilterText] = useState('');
+  const [inStockOnly, setInStockOnly] = useState(false);
+
   return (
     <div>
       <SearchBar />
