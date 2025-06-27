@@ -1,4 +1,4 @@
-import { getImageUrl } from './utils.js'
+import { getImageUrl } from './5.Passing props to a component/utils.js'
 
 export default function Profile() {
   return (
