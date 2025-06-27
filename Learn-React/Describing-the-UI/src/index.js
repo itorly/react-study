@@ -5,6 +5,7 @@ import "./styles.css";
 import App_1_2 from "./App";
 import App_3 from "./App3";
 import App_4 from "./App4";
+import App_5 from "./APP5_Passing props to a component"
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -12,5 +13,6 @@ root.render(
     <App_1_2 />
     <App_3 />
     <App_4 />
+    <App_5 />
   </StrictMode>
 );
