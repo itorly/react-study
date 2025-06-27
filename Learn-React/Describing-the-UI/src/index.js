@@ -6,6 +6,7 @@ import App_1_2 from "./App";
 import App_3 from "./App3";
 import App_4 from "./App4";
 import App_5 from "./APP5_Passing props to a component"
+import App_6 from "./App6_Conditional rendering"
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -14,5 +15,6 @@ root.render(
     <App_3 />
     <App_4 />
     <App_5 />
+    <App_6 />
   </StrictMode>
 );
