@@ -22,8 +22,11 @@ import Clock from './3.Render and Commit/step3-React commits changes to the DOM/
  * For re-renders, React will apply the minimal necessary operations (calculated while rendering!) to make the DOM match the latest rendering output.
  * 
  */
+// Step 1: calling createRoot with the target DOM node,
 const root = createRoot(document.getElementById("root"));
+// and then calling its render method with your component
 root.render(
+  // Step 2: React calling your components
   <StrictMode>
     <App1 />
     <App2 />
