@@ -11,6 +11,7 @@ import Clock from './3.Render and Commit/step3-React commits changes to the DOM/
 import Form from './4.State as a Snapshot/4.1.Setting state triggers renders/App.js'
 import PlusOneThreeTimes from './4.State as a Snapshot/4.2.Rendering takes a snapshot in time/App.js'
 import PlusFiveOneTime from './4.State as a Snapshot/4.3.State over time/App.js'
+import PutATimer from './4.State as a Snapshot/4.3.State over time/4.3.1.put a timer on the alert/App.js'
 
 /**
  * 3. Render and Commit
@@ -52,5 +53,7 @@ root.render(
     <hr/> 
     <h3>4.3.State over time</h3>
     <PlusFiveOneTime />
+    <h4>4.3.1.put a timer on the alert</h4>
+    <PutATimer />
   </StrictMode>
 );
