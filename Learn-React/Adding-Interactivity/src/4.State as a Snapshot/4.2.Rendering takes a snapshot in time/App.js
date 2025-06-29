@@ -1,6 +1,15 @@
 import { useState } from 'react';
 
 /**
+ * What does React do when re-rendering a component?
+ * 
+ * When React re-renders a component:
+    1.React calls your function again.
+    2.Your function returns a new JSX snapshot.
+    3.React then updates the screen to match the snapshot your function returned.
+ */
+
+/**
  * Notice that number only increments once per click!
  * 
  * Setting state only changes it for the next render. 
