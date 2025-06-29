@@ -9,7 +9,8 @@ import Gallery from './3.Render and Commit/Gallery.js';
 import Clock from './3.Render and Commit/step3-React commits changes to the DOM/App.js'
 
 import Form from './4.State as a Snapshot/4.1.Setting state triggers renders/App.js'
-import PlusTree from './4.State as a Snapshot/4.2.Rendering takes a snapshot in time/App.js'
+import PlusOneThreeTimes from './4.State as a Snapshot/4.2.Rendering takes a snapshot in time/App.js'
+import PlusFiveOneTime from './4.State as a Snapshot/4.3.State over time/App.js'
 
 /**
  * 3. Render and Commit
@@ -47,6 +48,9 @@ root.render(
     <Form />
     <hr/>
     <h3>4.2.Rendering takes a snapshot in time</h3>
-    <PlusTree />
+    <PlusOneThreeTimes />
+    <hr/> 
+    <h3>4.3.State over time</h3>
+    <PlusFiveOneTime />
   </StrictMode>
 );
