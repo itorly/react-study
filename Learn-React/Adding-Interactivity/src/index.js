@@ -8,6 +8,8 @@ import Image from './3.Render and Commit/Image.js';
 import Gallery from './3.Render and Commit/Gallery.js';
 import Clock from './3.Render and Commit/step3-React commits changes to the DOM/App.js'
 
+import Form from './4.State as a Snapshot/4.1.Setting state triggers renders/App.js'
+
 /**
  * 3. Render and Commit
  * Step 1: Trigger a render
@@ -28,10 +30,18 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   // Step 2: React calling your components
   <StrictMode>
+    <h1>1.Responding to events</h1>
     <App1 />
+    <hr/>
+    <h2>2.State: a memory of component</h2>
     <App2 />
+    <hr/>
+    <h2>3. Render and Commit</h2>
     <Image />
     <Gallery />
     <Clock />
+    <hr/>
+    <h2>4.State as a Snapshot</h2>
+    <Form />
   </StrictMode>
 );
