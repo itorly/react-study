@@ -120,15 +120,15 @@ root.render(
     <h4>1.Fix incorrect state updates</h4>
     <Scoreboard />
     <hr/>
-    <h4>2.Find and fix the mutation</h4>
-    <div>
-      <Canvas />
+    <div className="canvas-container">
+      <div className="canvas-wrapper">
+        <h4>2.Find and fix the mutation</h4>
+        <Canvas />
+      </div>
+      <div className="canvas-wrapper">
+        <h4>3.Update an object with Immer</h4>
+        <ImmerCanvas />
+      </div>
     </div>
-    <hr/>
-    <h4>3.Update an object with Immer</h4>
-    <div>
-      <ImmerCanvas />
-    </div>
-    <hr/>
   </StrictMode>
 );

@@ -47,3 +47,14 @@ ul {
 }
 
 button { margin-right: 10px; }
+
+.canvas-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.canvas-wrapper {
+  flex: 1;
+  min-width: 0;
+}
