@@ -58,3 +58,8 @@ button { margin-right: 10px; }
   flex: 1;
   min-width: 0;
 }
+
+.section-separator {
+  margin: 9rem 0;
+  border-top: 1px solid #ddd;
+}
