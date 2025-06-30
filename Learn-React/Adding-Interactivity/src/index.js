@@ -24,6 +24,7 @@ import DotMove from './6.Updating Objects in State/6.2.Treat state as read-only/
 import PartialUpdate from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/App.js';
 import DynamicName from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/6.3.1.Deep Dive - Using a single event handler for multiple fields/App.js';
 import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a nested object/App.js';
+import TryImmer from './6.Updating Objects in State/6.5.Write concise update logic with Immer/App.js';
 
 /**
  * 3. Render and Commit
@@ -108,5 +109,8 @@ root.render(
     <hr/>
     <h3>6.4.Updating a nested object</h3>
     <UpdatingANestedObject />
+    <hr/>
+    <h3>6.5.Write concise update logic with Immer</h3>
+    <TryImmer />
   </StrictMode>
 );
