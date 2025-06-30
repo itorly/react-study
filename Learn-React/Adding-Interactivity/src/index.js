@@ -26,6 +26,7 @@ import DynamicName from './6.Updating Objects in State/6.3.Copying objects with 
 import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a nested object/App.js';
 import TryImmer from './6.Updating Objects in State/6.5.Write concise update logic with Immer/App.js';
 import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect state updates/App.js';
+import Canvas from './6.Updating Objects in State/Challenges/2.Find and fix the mutation/App.js';
 
 /**
  * 3. Render and Commit
@@ -117,5 +118,8 @@ root.render(
     <h3>Challenges</h3>
     <h4>1.Fix incorrect state updates</h4>
     <Scoreboard />
+    <hr/>
+    <h4>2.Find and fix the mutation</h4>
+    <Canvas />
   </StrictMode>
 );
