@@ -12,6 +12,8 @@ export default function Counter() {
         setNumber(42);
         // number is the state value
         // setNumber(number + 1);
+        setNumber(n => n + 1);
+        setNumber(number + 1);
       }}>Increase the number</button>
     </>
   )
