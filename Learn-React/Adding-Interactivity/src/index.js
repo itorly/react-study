@@ -19,6 +19,7 @@ import UpdateStateAfterReplacingIt from './5.Queueing a Series of State Updates/
 import ReplaceStateAfterUpdatingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.2.What happens if you replace state after updating it/App.js'
 import RequestTracker from './5.Queueing a Series of State Updates/challenges/Fix a request counter/App.js'
 import StateQueueImpl from './5.Queueing a Series of State Updates/challenges/Implement the state queue/App.js'
+import DotStay from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.1.dot stay/App.js';
 
 /**
  * 3. Render and Commit
@@ -86,5 +87,10 @@ root.render(
     <hr/>
     <h4>Implement the state queue</h4>
     <StateQueueImpl />
+    <hr/>
+    <h2>6.Updating Objects in State</h2>
+    <h3>6.2.Treat state as read-only</h3>
+    <h4>6.2.1.dot stay</h4>
+    <DotStay />
   </StrictMode>
 );
