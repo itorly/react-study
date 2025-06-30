@@ -28,6 +28,7 @@ import TryImmer from './6.Updating Objects in State/6.5.Write concise update log
 import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect state updates/App.js';
 import Canvas from './6.Updating Objects in State/Challenges/2.Find and fix the mutation/App.js';
 import ImmerCanvas from './6.Updating Objects in State/Challenges/3.Update an object with Immer/App.js';
+import ArrayAppendOne from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.1.Adding to an array/App.js'
 
 /**
  * 3. Render and Commit
@@ -130,5 +131,11 @@ root.render(
         <ImmerCanvas />
       </div>
     </div>
+    <div className="section-separator"></div>
+    <hr/>
+    <h2>7.Updating Arrays in State</h2>
+    <h3>7.1.Updating arrays without mutation</h3>
+    <h4>7.1.1.Adding to an array</h4>
+    <ArrayAppendOne />
   </StrictMode>
 );
