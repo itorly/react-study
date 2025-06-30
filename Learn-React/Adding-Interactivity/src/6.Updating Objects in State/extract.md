@@ -43,4 +43,35 @@ With setPosition, you’re telling React:
 - Replace position with this new object
 - And render this component again
 
+### Local mutation is fine
 
+```js
+const [position, setPosition] = useState({
+    x: 0,
+    y: 0
+  });
+```
+
+The code below modifies an existing object in state, so it is a problem:
+```js
+position.x = e.clientX;
+position.y = e.clientY;
+```
+
+But code like this is absolutely fine because you’re mutating a fresh object you have just created:
+```js
+const nextPosition = {};
+nextPosition.x = e.clientX;
+nextPosition.y = e.clientY;
+setPosition(nextPosition);
+```
+
+In fact, it is completely equivalent to writing this:
+```js
+setPosition({
+  x: e.clientX,
+  y: e.clientY
+});
+```
+
+Mutation is only a problem when you change existing objects that are already in state. Mutating an object you’ve just created is okay because no other code references it yet. Changing it isn’t going to accidentally impact something that depends on it. This is called a “local mutation”. You can even do local mutation while rendering. 
