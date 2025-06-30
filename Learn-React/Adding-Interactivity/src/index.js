@@ -18,6 +18,7 @@ import IncrementingMultipleTimes from './5.Queueing a Series of State Updates/5.
 import UpdateStateAfterReplacingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.1.What happens if you update state after replacing it/App.js'
 import ReplaceStateAfterUpdatingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.2.What happens if you replace state after updating it/App.js'
 import RequestTracker from './5.Queueing a Series of State Updates/challenges/Fix a request counter/App.js'
+import StateQueueImpl from './5.Queueing a Series of State Updates/challenges/Implement the state queue/App.js'
 
 /**
  * 3. Render and Commit
@@ -82,5 +83,8 @@ root.render(
     <h3>Challenges</h3>
     <h4>Fix a request counter</h4>
     <RequestTracker />
+    <hr/>
+    <h4>Implement the state queue</h4>
+    <StateQueueImpl />
   </StrictMode>
 );
