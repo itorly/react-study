@@ -22,7 +22,7 @@ import StateQueueImpl from './5.Queueing a Series of State Updates/challenges/Im
 import DotStay from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.1.dot stay/App.js';
 import DotMove from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.2.dot move/App.js';
 import PartialUpdate from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/App.js';
-
+import DynamicName from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/6.3.1.Deep Dive - Using a single event handler for multiple fields/App.js';
 
 /**
  * 3. Render and Commit
@@ -101,5 +101,8 @@ root.render(
     <hr/>
     <h3>6.3.Copying objects with the spread syntax</h3>
     <PartialUpdate />
+    <hr/>
+    <h4>6.3.1.Deep Dive - Using a single event handler for multiple fields</h4>
+    <DynamicName />
   </StrictMode>
 );
