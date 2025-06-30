@@ -7,6 +7,14 @@ export default function MovingDot() {
   });
   return (
     <div
+      /**
+       * This code modifies the object assigned to position from the previous render. 
+       * But without using the state setting function, React has no idea that object has changed. 
+       * So React does not do anything in response.
+       * 
+       * While mutating state can work in some cases, we don’t recommend it. 
+       * You should treat the state value you have access to in a render as read-only.
+       */
       onPointerMove={e => {
         position.x = e.clientX;
         position.y = e.clientY;
