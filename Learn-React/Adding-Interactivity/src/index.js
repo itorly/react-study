@@ -17,6 +17,7 @@ import CrosswalkLight from './4.State as a Snapshot/4.4.Implement a traffic ligh
 import IncrementingMultipleTimes from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/App.js'
 import UpdateStateAfterReplacingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.1.What happens if you update state after replacing it/App.js'
 import ReplaceStateAfterUpdatingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.2.What happens if you replace state after updating it/App.js'
+import RequestTracker from './5.Queueing a Series of State Updates/challenges/Fix a request counter/App.js'
 
 /**
  * 3. Render and Commit
@@ -72,10 +73,14 @@ root.render(
     <h3>5.2.Updating the same state multiple times before the next render</h3>
     <IncrementingMultipleTimes />
     <hr/>
-    <h3>5.2.1.What happens if you update state after replacing it</h3>
+    <h4>5.2.1.What happens if you update state after replacing it</h4>
     <UpdateStateAfterReplacingIt />
     <hr/>
-    <h3>5.2.2.What happens if you replace state after updating it</h3>
+    <h4>5.2.2.What happens if you replace state after updating it</h4>
     <ReplaceStateAfterUpdatingIt />
+    <hr/>
+    <h3>Challenges</h3>
+    <h4>Fix a request counter</h4>
+    <RequestTracker />
   </StrictMode>
 );
