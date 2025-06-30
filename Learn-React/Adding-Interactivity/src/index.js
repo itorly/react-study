@@ -13,6 +13,7 @@ import PlusOneThreeTimes from './4.State as a Snapshot/4.2.Rendering takes a sna
 import PlusFiveOneTime from './4.State as a Snapshot/4.3.State over time/App.js'
 import PutATimer from './4.State as a Snapshot/4.3.State over time/4.3.1.put a timer on the alert/App.js'
 import HelloTo from './4.State as a Snapshot/4.3.State over time/4.3.2.event handlers less prone to timing mistakes/App.js'
+import CrosswalkLight from './4.State as a Snapshot/4.4.Implement a traffic light/App.js'
 
 /**
  * 3. Render and Commit
@@ -60,5 +61,8 @@ root.render(
     <hr/>
     <h4>4.3.2. event handlers less prone to timing mistakes</h4>
     <HelloTo />
+    <hr/>
+    <h4>4.4.Implement a traffic light</h4>
+    <CrosswalkLight />
   </StrictMode>
 );
