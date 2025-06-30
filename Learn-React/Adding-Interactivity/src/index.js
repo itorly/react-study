@@ -27,6 +27,7 @@ import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a 
 import TryImmer from './6.Updating Objects in State/6.5.Write concise update logic with Immer/App.js';
 import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect state updates/App.js';
 import Canvas from './6.Updating Objects in State/Challenges/2.Find and fix the mutation/App.js';
+import ImmerCanvas from './6.Updating Objects in State/Challenges/3.Update an object with Immer/App.js';
 
 /**
  * 3. Render and Commit
@@ -120,6 +121,14 @@ root.render(
     <Scoreboard />
     <hr/>
     <h4>2.Find and fix the mutation</h4>
-    <Canvas />
+    <div>
+      <Canvas />
+    </div>
+    <hr/>
+    <h4>3.Update an object with Immer</h4>
+    <div>
+      <ImmerCanvas />
+    </div>
+    <hr/>
   </StrictMode>
 );
