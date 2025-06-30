@@ -21,3 +21,26 @@ Technically, it is possible to change the contents of the object itself. This is
 position.x = 10;
 ```
 However, although objects in React state are technically mutable, you should treat them as if they were immutable—like numbers, booleans, and strings. Instead of mutating them, you should always replace them.
+
+
+### 6.2.Treat state as read-only
+ You should treat any JavaScript object that you put into state as read-only.
+
+ You should treat the state value you have access to in a render as read-only.
+
+To actually trigger a re-render in this case, create a new object and pass it to the state setting function:
+```javascript
+onPointerMove={e => {
+  setPosition({
+    x: e.clientX,
+    y: e.clientY
+  });
+}}
+```
+
+With setPosition, you’re telling React:
+
+- Replace position with this new object
+- And render this component again
+
+
