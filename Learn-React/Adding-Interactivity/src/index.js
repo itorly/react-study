@@ -21,6 +21,7 @@ import RequestTracker from './5.Queueing a Series of State Updates/challenges/Fi
 import StateQueueImpl from './5.Queueing a Series of State Updates/challenges/Implement the state queue/App.js'
 import DotStay from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.1.dot stay/App.js';
 import DotMove from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.2.dot move/App.js';
+import PartialUpdate from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/App.js';
 
 
 /**
@@ -98,5 +99,7 @@ root.render(
     <h4>6.2.2.dot move</h4>
     <DotMove />
     <hr/>
+    <h3>6.3.Copying objects with the spread syntax</h3>
+    <PartialUpdate />
   </StrictMode>
 );
