@@ -1,2 +1,2 @@
-## What happens if you replace state after updating it
+### What happens if you replace state after updating it
 After the event handler completes, React will trigger a re-render. During the re-render, React will process the queue. Updater functions run during rendering, so updater functions must be pure and only return the result. Don’t try to set state from inside of them or run other side effects. In Strict Mode, React will run each updater function twice (but discard the second result) to help you find mistakes.
