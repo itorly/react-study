@@ -23,6 +23,7 @@ import DotStay from './6.Updating Objects in State/6.2.Treat state as read-only/
 import DotMove from './6.Updating Objects in State/6.2.Treat state as read-only/6.2.2.dot move/App.js';
 import PartialUpdate from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/App.js';
 import DynamicName from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/6.3.1.Deep Dive - Using a single event handler for multiple fields/App.js';
+import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a nested object/App.js';
 
 /**
  * 3. Render and Commit
@@ -104,5 +105,8 @@ root.render(
     <hr/>
     <h4>6.3.1.Deep Dive - Using a single event handler for multiple fields</h4>
     <DynamicName />
+    <hr/>
+    <h3>6.4.Updating a nested object</h3>
+    <UpdatingANestedObject />
   </StrictMode>
 );
