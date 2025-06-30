@@ -15,6 +15,7 @@ import PutATimer from './4.State as a Snapshot/4.3.State over time/4.3.1.put a t
 import HelloTo from './4.State as a Snapshot/4.3.State over time/4.3.2.event handlers less prone to timing mistakes/App.js'
 import CrosswalkLight from './4.State as a Snapshot/4.4.Implement a traffic light/App.js'
 import IncrementingMultipleTimes from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/App.js'
+import UpdateStateAfterReplacingIt from './5.Queueing a Series of State Updates/5.2.Updating the same state multiple times before the next render/5.2.1.What happens if you update state after replacing it/App.js'
 
 /**
  * 3. Render and Commit
@@ -69,5 +70,8 @@ root.render(
     <h2>5.Queueing a Series of State Updates</h2>
     <h3>5.2.Updating the same state multiple times before the next render</h3>
     <IncrementingMultipleTimes />
+    <hr/>
+    <h3>5.2.1.What happens if you update state after replacing it</h3>
+    <UpdateStateAfterReplacingIt />
   </StrictMode>
 );
