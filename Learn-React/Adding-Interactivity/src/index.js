@@ -25,6 +25,7 @@ import PartialUpdate from './6.Updating Objects in State/6.3.Copying objects wit
 import DynamicName from './6.Updating Objects in State/6.3.Copying objects with the spread syntax/6.3.1.Deep Dive - Using a single event handler for multiple fields/App.js';
 import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a nested object/App.js';
 import TryImmer from './6.Updating Objects in State/6.5.Write concise update logic with Immer/App.js';
+import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect state updates/App.js';
 
 /**
  * 3. Render and Commit
@@ -112,5 +113,9 @@ root.render(
     <hr/>
     <h3>6.5.Write concise update logic with Immer</h3>
     <TryImmer />
+    <hr/>
+    <h3>Challenges</h3>
+    <h4>1.Fix incorrect state updates</h4>
+    <Scoreboard />
   </StrictMode>
 );
