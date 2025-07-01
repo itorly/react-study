@@ -33,21 +33,31 @@ export default function ShapeEditor() {
       <button onClick={handleClick}>
         Move circles down!
       </button>
-      {shapes.map(shape => (
-        <div
-          key={shape.id}
-          style={{
-          background: 'purple',
-          position: 'absolute',
-          left: shape.x,
-          top: shape.y,
-          borderRadius:
-            shape.type === 'circle'
-              ? '50%' : '',
-          width: 20,
-          height: 20,
-        }} />
-      ))}
+      <div style={{ position: 'relative', height: '300px', border: '1px solid #ccc', marginTop: '20px' }}>
+        {shapes.map(shape => (
+          <div
+            key={shape.id}
+            style={{
+              background: shape.type === 'circle' ? '#4CAF50' : '#2196F3',
+              position: 'absolute',
+              left: shape.x,
+              top: shape.y,
+              borderRadius: shape.type === 'circle' ? '50%' : '5px',
+              width: 50,
+              height: 50,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'white',
+              fontWeight: 'bold',
+              boxShadow: '0 2px 5px rgba(0,0,0,0.2)',
+              transition: 'all 0.3s ease'
+            }}
+          >
+            {shape.type[0].toUpperCase()}
+          </div>
+        ))}
+      </div>
     </>
   );
 }
