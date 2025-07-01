@@ -20,6 +20,7 @@ export default function List() {
             {artist.name}{' '}
             <button onClick={() => {
               setArtists(
+                // create an array that consists of those artists whose IDs are different from artist.id
                 artists.filter(a =>
                   a.id !== artist.id
                 )
