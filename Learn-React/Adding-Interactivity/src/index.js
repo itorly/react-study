@@ -32,6 +32,7 @@ import ArrayAppendOne from './7.Updating Arrays in State/7.1.Updating arrays wit
 import Filter from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.2.Removing from an array/App.js'
 import ShapeEditor from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.3.Transforming an array/ShapeEditor.js';
 import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.4.Replacing items in an array/CounterLst.js';
+import List from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.5.Inserting into an array/List.js';
 
 /**
  * 3. Render and Commit
@@ -149,5 +150,8 @@ root.render(
     <hr/>
     <h4>7.1.4.Replacing items in an array</h4>
     <CounterLst />
+    <hr/>
+    <h4>7.1.5.Inserting into an array</h4>
+    <List />
   </StrictMode>
 );
