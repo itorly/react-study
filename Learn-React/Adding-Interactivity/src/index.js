@@ -31,6 +31,7 @@ import ImmerCanvas from './6.Updating Objects in State/Challenges/3.Update an ob
 import ArrayAppendOne from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.1.Adding to an array/App.js'
 import Filter from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.2.Removing from an array/App.js'
 import ShapeEditor from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.3.Transforming an array/ShapeEditor.js';
+import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.4.Replacing items in an array/CounterLst.js';
 
 /**
  * 3. Render and Commit
@@ -145,5 +146,8 @@ root.render(
     <hr/>
     <h4>7.1.3.Transforming an array</h4>
     <ShapeEditor />
+    <hr/>
+    <h4>7.1.4.Replacing items in an array</h4>
+    <CounterLst />
   </StrictMode>
 );
