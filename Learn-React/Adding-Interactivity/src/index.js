@@ -29,6 +29,7 @@ import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect
 import Canvas from './6.Updating Objects in State/Challenges/2.Find and fix the mutation/App.js';
 import ImmerCanvas from './6.Updating Objects in State/Challenges/3.Update an object with Immer/App.js';
 import ArrayAppendOne from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.1.Adding to an array/App.js'
+import Filter from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.2.Removing from an array/App.js'
 
 /**
  * 3. Render and Commit
@@ -137,5 +138,8 @@ root.render(
     <h3>7.1.Updating arrays without mutation</h3>
     <h4>7.1.1.Adding to an array</h4>
     <ArrayAppendOne />
+    <hr/>
+    <h4>7.1.2.Removing from an array</h4>
+    <Filter />
   </StrictMode>
 );
