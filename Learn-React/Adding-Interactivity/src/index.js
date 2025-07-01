@@ -33,6 +33,7 @@ import Filter from './7.Updating Arrays in State/7.1.Updating arrays without mut
 import ShapeEditor from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.3.Transforming an array/ShapeEditor.js';
 import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.4.Replacing items in an array/CounterLst.js';
 import InsertAnElementIntoTheList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.5.Inserting into an array/InsertAnElementIntoTheList.js';
+import ReverseList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.6.Making other changes to an array/ReverseList.js';
 
 /**
  * 3. Render and Commit
@@ -153,5 +154,8 @@ root.render(
     <hr/>
     <h4>7.1.5.Inserting into an array</h4>
     <InsertAnElementIntoTheList />
+    <hr/>
+    <h4>7.1.6.Making other changes to an array</h4>
+    <ReverseList />
   </StrictMode>
 );
