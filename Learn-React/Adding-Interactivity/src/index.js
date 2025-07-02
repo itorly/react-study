@@ -38,6 +38,7 @@ import BucketList from './7.Updating Arrays in State/7.2.Updating objects inside
 import ImmerBucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/ImmerBucketList.js';
 import ShoppingCartUpdating from './7.Updating Arrays in State/Challenges/1.Update an item in the shopping cart/ShoppingCartUpdating.js';
 import ShoppingCartRemoving from './7.Updating Arrays in State/Challenges/2.Remove an item from the shopping cart/ShoppingCartRemoving.js';
+import TaskApp from './7.Updating Arrays in State/Challenges/3.Fix the mutations using non-mutative methods/TaskApp.js';
 
 /**
  * 3. Render and Commit
@@ -174,5 +175,8 @@ root.render(
     <hr/>
     <h4>2.Remove an item from the shopping cart</h4>
     <ShoppingCartRemoving />
+    <hr/>
+    <h4>3.Fix the mutations using non-mutative methods</h4>
+    <TaskApp />
   </StrictMode>
 );
