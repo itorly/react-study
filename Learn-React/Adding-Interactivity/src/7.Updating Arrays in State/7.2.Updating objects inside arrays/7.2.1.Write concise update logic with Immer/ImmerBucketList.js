@@ -7,6 +7,8 @@ const initialList = [
   { id: 2, title: 'Terracotta Army', seen: true },
 ];
 
+// Behind the scenes, Immer always constructs the next state from scratch 
+// according to the changes that you’ve done to the draft.
 export default function BucketList() {
   const [myList, updateMyList] = useImmer(
     initialList
