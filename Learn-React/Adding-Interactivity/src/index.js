@@ -35,7 +35,7 @@ import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without
 import InsertAnElementIntoTheList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.5.Inserting into an array/InsertAnElementIntoTheList.js';
 import ReverseList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.6.Making other changes to an array/ReverseList.js';
 import BucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/BucketList.js';
-import ImmerBucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/ImmerBucketList.js';
+import ImmerBucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/BucketListImmer.js';
 import ShoppingCartUpdating from './7.Updating Arrays in State/Challenges/1.Update an item in the shopping cart/ShoppingCartUpdating.js';
 import ShoppingCartRemoving from './7.Updating Arrays in State/Challenges/2.Remove an item from the shopping cart/ShoppingCartRemoving.js';
 import TaskApp from './7.Updating Arrays in State/Challenges/3.Fix the mutations using non-mutative methods/TaskApp.js';
