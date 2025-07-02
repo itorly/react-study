@@ -34,6 +34,7 @@ import ShapeEditor from './7.Updating Arrays in State/7.1.Updating arrays withou
 import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.4.Replacing items in an array/CounterLst.js';
 import InsertAnElementIntoTheList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.5.Inserting into an array/InsertAnElementIntoTheList.js';
 import ReverseList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.6.Making other changes to an array/ReverseList.js';
+import BucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/BucketList.js';
 
 /**
  * 3. Render and Commit
@@ -157,5 +158,8 @@ root.render(
     <hr/>
     <h4>7.1.6.Making other changes to an array</h4>
     <ReverseList />
+    <hr/>
+    <h3>7.2.Updating objects inside arrays</h3>
+    <BucketList />
   </StrictMode>
 );
