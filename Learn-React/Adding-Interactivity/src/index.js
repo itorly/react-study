@@ -27,7 +27,7 @@ import UpdatingANestedObject from './6.Updating Objects in State/6.4.Updating a 
 import TryImmer from './6.Updating Objects in State/6.5.Write concise update logic with Immer/App.js';
 import Scoreboard from './6.Updating Objects in State/Challenges/1.Fix incorrect state updates/App.js';
 import Canvas from './6.Updating Objects in State/Challenges/2.Find and fix the mutation/App.js';
-import ImmerCanvas from './6.Updating Objects in State/Challenges/3.Update an object with Immer/App.js';
+import CanvasImmer from './6.Updating Objects in State/Challenges/3.Update an object with Immer/App.js';
 import ArrayAppendOne from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.1.Adding to an array/App.js'
 import Filter from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.2.Removing from an array/App.js'
 import ShapeEditor from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.3.Transforming an array/ShapeEditor.js';
@@ -35,7 +35,7 @@ import CounterLst from './7.Updating Arrays in State/7.1.Updating arrays without
 import InsertAnElementIntoTheList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.5.Inserting into an array/InsertAnElementIntoTheList.js';
 import ReverseList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.6.Making other changes to an array/ReverseList.js';
 import BucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/BucketList.js';
-import ImmerBucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/BucketListImmer.js';
+import BucketListImmer from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/BucketListImmer.js';
 import ShoppingCartUpdating from './7.Updating Arrays in State/Challenges/1.Update an item in the shopping cart/ShoppingCartUpdating.js';
 import ShoppingCartRemoving from './7.Updating Arrays in State/Challenges/2.Remove an item from the shopping cart/ShoppingCartRemoving.js';
 import TaskApp from './7.Updating Arrays in State/Challenges/3.Fix the mutations using non-mutative methods/TaskApp.js';
@@ -139,7 +139,7 @@ root.render(
       </div>
       <div className="canvas-wrapper">
         <h4>3.Update an object with Immer</h4>
-        <ImmerCanvas />
+        <CanvasImmer />
       </div>
     </div>
     <div className="section-separator"></div>
@@ -168,7 +168,7 @@ root.render(
     <BucketList />
     <hr/>
     <h4>7.2.1.Write concise update logic with Immer</h4>
-    <ImmerBucketList />
+    <BucketListImmer />
     <hr/>
     <h3>Challenges</h3>
     <h4>1.Update an item in the shopping cart</h4>
