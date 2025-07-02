@@ -36,7 +36,7 @@ import InsertAnElementIntoTheList from './7.Updating Arrays in State/7.1.Updatin
 import ReverseList from './7.Updating Arrays in State/7.1.Updating arrays without mutation/7.1.6.Making other changes to an array/ReverseList.js';
 import BucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/BucketList.js';
 import ImmerBucketList from './7.Updating Arrays in State/7.2.Updating objects inside arrays/7.2.1.Write concise update logic with Immer/ImmerBucketList.js';
-import ShoppingCart from './7.Updating Arrays in State/Challenges/1.Update an item in the shopping cart/ShoppingCart.js';
+import ShoppingCartUpdating from './7.Updating Arrays in State/Challenges/1.Update an item in the shopping cart/ShoppingCartUpdating.js';
 
 /**
  * 3. Render and Commit
@@ -169,6 +169,7 @@ root.render(
     <hr/>
     <h3>Challenges</h3>
     <h4>1.Update an item in the shopping cart</h4>
-    <ShoppingCart />
+    <ShoppingCartUpdating />
+  
   </StrictMode>
 );
