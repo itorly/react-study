@@ -14,7 +14,7 @@ const initialProducts = [{
   count: 2,
 }];
 
-export default function ShoppingCart() {
+export default function ShoppingCartUpdating() {
   const [
     products,
     setProducts
