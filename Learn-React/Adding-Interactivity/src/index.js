@@ -61,7 +61,7 @@ const root = createRoot(document.getElementById("root"));
 root.render(
   // Step 2: React calling your components
   <StrictMode>
-    <h1>1.Responding to events</h1>
+    <h2>1.Responding to events</h2>
     <App1 />
     <hr/>
     <h2>2.State: a memory of component</h2>
