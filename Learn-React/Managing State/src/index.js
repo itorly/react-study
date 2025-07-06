@@ -7,6 +7,7 @@ import App2 from "./1.Reacting to input with state/Step 1 Identify your componen
 import DisplayingManyVisualStatesAtOnce from "./1.Reacting to input with state/Step 1 Identify your components different visual states/Deep Dive - Displaying many visual states at once/DisplayingManyVisualStatesAtOnce";
 import ConnectTheEventHandlersToSetState from "./1.Reacting to input with state/Step 5 Connect the event handlers to set state/ConnectTheEventHandlersToSetState";
 import AddAndRemoveCSSClass from "./1.Reacting to input with state/Challenges/1.Add and remove a CSS class/AddAndRemoveCSSClass";
+import MovingDot from "./2.Choosing the state structure/2.2.Group related state/MovingDot";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -27,5 +28,9 @@ root.render(
     <hr/>
     <h4>Challenge 1: Add and remove a CSS class</h4>
     <AddAndRemoveCSSClass />
+    <hr/>
+    <h2>2.Choosing the State Structure</h2>
+    <h3>2.2.Group related state</h3>
+    <MovingDot />
   </StrictMode>
 );
