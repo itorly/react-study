@@ -9,6 +9,7 @@ import ConnectTheEventHandlersToSetState from "./1.Reacting to input with state/
 import AddAndRemoveCSSClass from "./1.Reacting to input with state/Challenges/1.Add and remove a CSS class/AddAndRemoveCSSClass";
 import MovingDot from "./2.Choosing the state structure/2.2.Group related state/MovingDot";
 import FeedbackForm from "./2.Choosing the state structure/2.3.Avoid contradictions in state/FeedbackForm";
+import AvoidRedundantState from "./2.Choosing the state structure/2.4.Avoid redundant state/AvoidRedundantState";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -36,5 +37,8 @@ root.render(
     <hr/>
     <h3>2.3.Avoid contradictions in state</h3>
     <FeedbackForm />
+    <hr/>
+    <h3>2.4.Avoid redundant state</h3>
+    <AvoidRedundantState />
   </StrictMode>
 );
