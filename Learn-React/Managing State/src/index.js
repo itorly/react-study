@@ -8,6 +8,7 @@ import DisplayingManyVisualStatesAtOnce from "./1.Reacting to input with state/S
 import ConnectTheEventHandlersToSetState from "./1.Reacting to input with state/Step 5 Connect the event handlers to set state/ConnectTheEventHandlersToSetState";
 import AddAndRemoveCSSClass from "./1.Reacting to input with state/Challenges/1.Add and remove a CSS class/AddAndRemoveCSSClass";
 import MovingDot from "./2.Choosing the state structure/2.2.Group related state/MovingDot";
+import FeedbackForm from "./2.Choosing the state structure/2.3.Avoid contradictions in state/FeedbackForm";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -32,5 +33,8 @@ root.render(
     <h2>2.Choosing the State Structure</h2>
     <h3>2.2.Group related state</h3>
     <MovingDot />
+    <hr/>
+    <h3>2.3.Avoid contradictions in state</h3>
+    <FeedbackForm />
   </StrictMode>
 );
