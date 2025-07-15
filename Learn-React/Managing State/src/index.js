@@ -11,6 +11,9 @@ import EditProfile from "./1.Reacting to input with state/Challenges/2.Profile e
 import MovingDot from "./2.Choosing the state structure/2.2.Group related state/MovingDot";
 import FeedbackForm from "./2.Choosing the state structure/2.3.Avoid contradictions in state/FeedbackForm";
 import AvoidRedundantState from "./2.Choosing the state structure/2.4.Avoid redundant state/AvoidRedundantState";
+import AppStateDuplicated from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.1.State Duplicated/AppStateDuplicated";
+import AppStateDuplicatedAndEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.2.Editable State Duplicated/AppStateDuplicatedAndEditable";
+import AppEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.3.Editable State/AppEditable";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -44,5 +47,13 @@ root.render(
     <hr/>
     <h3>2.4.Avoid redundant state</h3>
     <AvoidRedundantState />
+    <hr/>
+    <h3>2.5.Avoid duplication in state</h3>
+    <h4>State Duplicated</h4>
+    <AppStateDuplicated />
+    <h4>State Duplicated and Editable</h4>
+    <AppStateDuplicatedAndEditable />
+    <h4>State Editable</h4>
+    <AppEditable />
   </StrictMode>
 );
