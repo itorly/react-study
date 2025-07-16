@@ -15,7 +15,7 @@ import AppStateDuplicated from "./2.Choosing the state structure/2.5.Avoid dupli
 import AppStateDuplicatedAndEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.2.Editable State Duplicated/AppStateDuplicatedAndEditable";
 import AppEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.3.Editable State/AppEditable";
 import TravelPlan from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.1.making nested state flat/TravelPlan";
-import TravelPlanWithRemoval from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/TravelPlan";
+import TravelPlanWithRemoval from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/TravelPlanWithRemoval";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
