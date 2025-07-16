@@ -14,6 +14,7 @@ import AvoidRedundantState from "./2.Choosing the state structure/2.4.Avoid redu
 import AppStateDuplicated from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.1.State Duplicated/AppStateDuplicated";
 import AppStateDuplicatedAndEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.2.Editable State Duplicated/AppStateDuplicatedAndEditable";
 import AppEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.3.Editable State/AppEditable";
+import TravelPlan from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.1.making nested state flat/TravelPlan";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -49,11 +50,15 @@ root.render(
     <AvoidRedundantState />
     <hr/>
     <h3>2.5.Avoid duplication in state</h3>
-    <h4>State Duplicated</h4>
+    <h4>2.5.1.State Duplicated</h4>
     <AppStateDuplicated />
-    <h4>State Duplicated and Editable</h4>
+    <h4>2.5.2.State Duplicated and Editable</h4>
     <AppStateDuplicatedAndEditable />
-    <h4>State Editable</h4>
+    <h4>2.5.3.State Editable</h4>
     <AppEditable />
+    <hr/>
+    <h3>2.6.Avoid deeply nested state</h3>
+    <h4>2.6.1.Making nested state flat</h4>
+    <TravelPlan />
   </StrictMode>
 );
