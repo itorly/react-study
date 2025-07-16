@@ -16,6 +16,7 @@ import AppStateDuplicatedAndEditable from "./2.Choosing the state structure/2.5.
 import AppEditable from "./2.Choosing the state structure/2.5.Avoid duplication in state/2.5.3.Editable State/AppEditable";
 import TravelPlan from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.1.making nested state flat/TravelPlan";
 import TravelPlanWithRemoval from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/TravelPlanWithRemoval";
+import TravelPlanImprovingMemoryUsage from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/deep dive improving memory usage/TravelPlanImprovingMemoryUsage";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -64,5 +65,8 @@ root.render(
     <hr/>
     <h4>2.6.2.Remove a nested item</h4>
     <TravelPlanWithRemoval />
+    <hr/>
+    <h4>Deep Dive: Improving Memory Usage</h4>
+    <TravelPlanImprovingMemoryUsage />
   </StrictMode>
 );
