@@ -17,6 +17,7 @@ import AppEditable from "./2.Choosing the state structure/2.5.Avoid duplication 
 import TravelPlan from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.1.making nested state flat/TravelPlan";
 import TravelPlanWithRemoval from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/TravelPlanWithRemoval";
 import TravelPlanImprovingMemoryUsage from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/deep dive improving memory usage/TravelPlanImprovingMemoryUsage";
+import NestedState from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.1-Hover State Management/Nested State";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -68,5 +69,9 @@ root.render(
     <hr/>
     <h4>Deep Dive: Improving Memory Usage</h4>
     <TravelPlanImprovingMemoryUsage />
+    <hr/>
+    <h3>2.6.3 Reduce state nesting by moving some of the nested state into the child components</h3>
+    <h4>2.6.3.1 Hover State Management</h4>
+    <NestedState />
   </StrictMode>
 );
