@@ -20,6 +20,7 @@ import TravelPlanImprovingMemoryUsage from "./2.Choosing the state structure/2.6
 import NestedState from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.1-Hover State Management/Nested State";
 import MovingStateToChildComponent from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.1-Hover State Management/refactor";
 import NestedStateToggleVisibility from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.2-Toggle Visibility/Nested State";
+import RefactorToggleVisibility from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.2-Toggle Visibility/refactor";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -81,5 +82,8 @@ root.render(
     <hr/>
     <h4>2.6.3.2 Toggle Visibility</h4>
     <NestedStateToggleVisibility />
+    <hr/>
+    <h4>Toggle Visibility Refactor</h4>
+    <RefactorToggleVisibility />
   </StrictMode>
 );
