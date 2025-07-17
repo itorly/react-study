@@ -19,6 +19,7 @@ import TravelPlanWithRemoval from "./2.Choosing the state structure/2.6.Avoid de
 import TravelPlanImprovingMemoryUsage from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.2.remove a nested item/deep dive improving memory usage/TravelPlanImprovingMemoryUsage";
 import NestedState from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.1-Hover State Management/Nested State";
 import MovingStateToChildComponent from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.1-Hover State Management/refactor";
+import NestedStateToggleVisibility from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.2-Toggle Visibility/Nested State";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -77,5 +78,8 @@ root.render(
     <hr/>
     <h4>Moving State to Child Component</h4>
     <MovingStateToChildComponent />
+    <hr/>
+    <h4>2.6.3.2 Toggle Visibility</h4>
+    <NestedStateToggleVisibility />
   </StrictMode>
 );
