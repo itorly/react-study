@@ -43,6 +43,10 @@ export default function TravelPlan() {
 
   function handleDeleteItem(itemId) {
     setTotal(total - 1);
+    let deleted_item = items.filter(item => item.id === itemId).at(0);
+    if (deleted_item.packed === true) {
+      setPacked(packed - 1);
+    }
     setItems(
       items.filter(item => item.id !== itemId)
     );
