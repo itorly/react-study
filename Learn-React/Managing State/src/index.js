@@ -23,6 +23,7 @@ import NestedStateToggleVisibility from "./2.Choosing the state structure/2.6.Av
 import RefactorToggleVisibility from "./2.Choosing the state structure/2.6.Avoid deeply nested state/2.6.3-reduce state nesting by moving some of the nested state into the child components/2.6.3.2-Toggle Visibility/refactor";
 import TimeAndColor from "./2.Choosing the state structure/Challenge/1.Fix a component that’s not updating/TimeAndColorApp";
 import AppTravelPlanFixingList from "./2.Choosing the state structure/Challenge/2.Fix a broken packing list/AppTravelPlanFixingList";
+import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the disappearing selection/AppMailClient";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -93,6 +94,9 @@ root.render(
     <hr/>
     <h3>Challenge 2: Fix a broken packing list</h3>
     <AppTravelPlanFixingList />
+    <hr/>
+    <h3>Challenge 3: Fix the disappearing selection</h3>
+    <AppMailClient />
     <hr/>
   </StrictMode>
 );
