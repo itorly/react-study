@@ -1,7 +1,9 @@
 import { useState } from 'react';
 
-function Panel({ title, children }) {
-  const [isActive, setIsActive] = useState(false);
+//  instead, add isActive to the Panel’s list of props
+function Panel({ title, children, isActive }) {
+  // Removed state from the child components
+
   return (
     <section className="panel">
       <h3>{title}</h3>
