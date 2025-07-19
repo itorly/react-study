@@ -24,6 +24,7 @@ import RefactorToggleVisibility from "./2.Choosing the state structure/2.6.Avoid
 import TimeAndColor from "./2.Choosing the state structure/Challenge/1.Fix a component that’s not updating/TimeAndColorApp";
 import AppTravelPlanFixingList from "./2.Choosing the state structure/Challenge/2.Fix a broken packing list/AppTravelPlanFixingList";
 import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the disappearing selection/AppMailClient";
+import AppMailClientMultiSelection from "./2.Choosing the state structure/Challenge/4.Implement multiple selection/AppMailClientMultiSelection";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -97,6 +98,9 @@ root.render(
     <hr/>
     <h3>Challenge 3: Fix the disappearing selection</h3>
     <AppMailClient />
+    <hr/>
+    <h3>Challenge 4: Implement multiple selection</h3>
+    <AppMailClientMultiSelection />
     <hr/>
   </StrictMode>
 );
