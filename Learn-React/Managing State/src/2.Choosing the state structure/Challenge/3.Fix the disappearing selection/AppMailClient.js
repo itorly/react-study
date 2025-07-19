@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { initialLetters } from './data.js';
 import Letter from './Letter.js';
+import "./styles.css";
 
 export default function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
