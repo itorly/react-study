@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+import Accordion from "./3.Sharing State Between Components/3.1.Lifting state up by example/Accordion";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -102,5 +103,8 @@ root.render(
     <h3>Challenge 4: Implement multiple selection</h3>
     <AppMailClientMultiSelection />
     <hr/>
+    <h2>3.Sharing State Between Components</h2>
+    <h3>3.1 Lifting state up by example</h3>
+    <Accordion />
   </StrictMode>
 );
