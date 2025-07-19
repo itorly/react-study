@@ -5,10 +5,11 @@ import "./styles.css";
 
 export default function MailClient() {
   const [letters, setLetters] = useState(initialLetters);
-  const [highlightedLetter, setHighlightedLetter] = useState(null);
+  //  remove the state duplicated
+  const [highlightedLetterId, setHighlightedLetterId] = useState(null);
 
-  function handleHover(letter) {
-    setHighlightedLetter(letter);
+  function handleHover(letterId) {
+    setHighlightedLetterId(letterId);
   }
 
   function handleStar(starred) {
@@ -33,7 +34,7 @@ export default function MailClient() {
             key={letter.id}
             letter={letter}
             isHighlighted={
-              letter === highlightedLetter
+              letter.id === highlightedLetterId
             }
             onHover={handleHover}
             onToggleStar={handleStar}
