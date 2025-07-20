@@ -2,21 +2,22 @@ import { useState } from 'react';
 import { foods, filterItems } from './data.js';
 
 export default function FilterableList() {
-  return (
-    <>
-      <SearchBar />
-      <hr />
-      <List items={foods} />
-    </>
-  );
-}
-
-function SearchBar() {
   const [query, setQuery] = useState('');
 
   function handleChange(e) {
     setQuery(e.target.value);
   }
+
+  return (
+    <>
+      <SearchBar query={query} handleChange={handleChange} />
+      <hr />
+      <List items={foods} qr={query} />
+    </>
+  );
+}
+
+function SearchBar({ query, handleChange }) {
 
   return (
     <label>
@@ -29,7 +30,11 @@ function SearchBar() {
   );
 }
 
-function List({ items }) {
+function List({ items, qr }) {
+  if (qr !== undefined && qr !== '') {
+    items = filterItems(items, qr);
+  }
+  
   return (
     <table>
       <tbody>
