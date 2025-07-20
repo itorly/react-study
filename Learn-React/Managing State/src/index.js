@@ -27,6 +27,7 @@ import AppTravelPlanFixingList from "./2.Choosing the state structure/Challenge/
 import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the disappearing selection/AppMailClient";
 import AppMailClientMultiSelection from "./2.Choosing the state structure/Challenge/4.Implement multiple selection/AppMailClientMultiSelection";
 import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synced inputs/SyncedInputs";
+import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.Filtering a list/AppFilterableList";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -110,5 +111,8 @@ root.render(
     <hr/>
     <h3>Challenge 1: Synced Inputs</h3>
     <SyncedInputs />
+    <hr/>
+    <h3>Challenge 2: Filterable List</h3>
+    <AppFilterableList />
   </StrictMode>
 );
