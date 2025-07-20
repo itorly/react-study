@@ -31,6 +31,7 @@ import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.
 import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.1/AppRenderTwoPositions";
 import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.2/AppRenderTwoComponentsSideBySide";
 import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
+import AppSameComponentSamePosition from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/AppSameComponentSamePosition";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -60,14 +61,9 @@ root.render(
     <hr/>
     <h4>4.1.3.Remove the Component, destroy the state</h4>
     <AppKeepStateAround />
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
+    <hr/>
+    <h3>4.2.Same component at the same position preserves state</h3>
+    <AppSameComponentSamePosition />
     <hr/>
     <h2>Reacting to Input with State</h2>
     <h3>Thinking about UI declaratively</h3>
