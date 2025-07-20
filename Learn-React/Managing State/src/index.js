@@ -34,6 +34,7 @@ import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is 
 import AppSameComponentSamePosition from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/AppSameComponentSamePosition";
 import AppNotResetWhenTick from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/Pitfall/AppNotResetWhenTick";
 import AppTickingReplaceComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.1.Different Component Types/AppTickingReplaceComponent";
+import AppDifferentParentComponentTypes from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.2.Different Parent Component Types/AppDifferentParentComponentTypes";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -73,6 +74,9 @@ root.render(
     <h3>4.3.Different components at the same position reset state</h3>
     <h4>4.3.1.Different Component Types</h4>
     <AppTickingReplaceComponent />
+    <hr/>
+    <h4>4.3.2.Different Parent Component Types</h4>
+    <AppDifferentParentComponentTypes />
     <hr/>
     <h2>Reacting to Input with State</h2>
     <h3>Thinking about UI declaratively</h3>
