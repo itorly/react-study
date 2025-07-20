@@ -30,6 +30,7 @@ import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synce
 import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.Filtering a list/AppFilterableList";
 import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.1/AppRenderTwoPositions";
 import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.2/AppRenderTwoComponentsSideBySide";
+import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -46,10 +47,19 @@ root.render(
     <br/>
     <br/>
     <br/>
-    <br/>
     <hr/>
     <h4>4.1.2.Render two components side by side</h4>
     <AppRenderTwoComponentsSideBySide />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h4>4.1.3.Remove the Component, destroy the state</h4>
+    <AppKeepStateAround />
     <br/>
     <br/>
     <br/>
