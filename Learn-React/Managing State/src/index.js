@@ -32,7 +32,7 @@ import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State 
 import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.2/AppRenderTwoComponentsSideBySide";
 import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
 import AppSameComponentSamePosition from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/AppSameComponentSamePosition";
-import AppNotResetWhenTick from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/Pitfall/AppNotResetWhenTick";
+import AppNotResetWhenTick from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/Pitfall-the position in the UI tree matters to React/AppNotResetWhenTick";
 import AppTickingReplaceComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.1.Different Component Types/AppTickingReplaceComponent";
 import AppDifferentParentComponentTypes from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.2.Different Parent Component Types/AppDifferentParentComponentTypes";
 
