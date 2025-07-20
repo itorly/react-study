@@ -33,6 +33,7 @@ import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State
 import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
 import AppSameComponentSamePosition from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/AppSameComponentSamePosition";
 import AppNotResetWhenTick from "./4.Preserving and Resetting State/4.2.Same component at the same position preserves state/Pitfall/AppNotResetWhenTick";
+import AppTickingReplaceComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.1.Different Component Types/AppTickingReplaceComponent";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -68,6 +69,10 @@ root.render(
     <hr/>
     <h4>Pitfall: State is not reset when a component is ticked</h4>
     <AppNotResetWhenTick />
+    <hr/>
+    <h3>4.3.Different components at the same position reset state</h3>
+    <h4>4.3.1.Different Component Types</h4>
+    <AppTickingReplaceComponent />
     <hr/>
     <h2>Reacting to Input with State</h2>
     <h3>Thinking about UI declaratively</h3>
