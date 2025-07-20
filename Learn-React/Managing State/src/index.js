@@ -28,7 +28,7 @@ import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the 
 import AppMailClientMultiSelection from "./2.Choosing the state structure/Challenge/4.Implement multiple selection/AppMailClientMultiSelection";
 import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synced inputs/SyncedInputs";
 import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.Filtering a list/AppFilterableList";
-import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/AppRenderTwoPositions";
+import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.1/AppRenderTwoPositions";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
