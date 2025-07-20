@@ -26,6 +26,7 @@ import TimeAndColor from "./2.Choosing the state structure/Challenge/1.Fix a com
 import AppTravelPlanFixingList from "./2.Choosing the state structure/Challenge/2.Fix a broken packing list/AppTravelPlanFixingList";
 import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the disappearing selection/AppMailClient";
 import AppMailClientMultiSelection from "./2.Choosing the state structure/Challenge/4.Implement multiple selection/AppMailClientMultiSelection";
+import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synced inputs/SyncedInputs";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -106,5 +107,8 @@ root.render(
     <h2>3.Sharing State Between Components</h2>
     <h3>3.1 Lifting state up by example</h3>
     <Accordion />
+    <hr/>
+    <h3>Challenge 1: Synced Inputs</h3>
+    <SyncedInputs />
   </StrictMode>
 );
