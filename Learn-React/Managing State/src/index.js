@@ -38,6 +38,7 @@ import AppDifferentParentComponentTypes from "./4.Preserving and Resetting State
 import MyComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/Pitfall-do not nest component function definitions/MyComponent";
 import AppScoreboard from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/AppScoreboard";
 import AppScoreboardDifferentPositions from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/Option 1-Rendering a component in different positions/AppScoreboardDifferentPositions";
+import AppScoreboardWithKey from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/Option 2-Resetting state with a key/AppScoreboardWithKey";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -99,6 +100,19 @@ root.render(
     <hr/>
     <h4>Option 1: Rendering a component in different positions</h4>
     <AppScoreboardDifferentPositions />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h4>Option 2: Resetting state with a key</h4>
+    <AppScoreboardWithKey />
     <br/>
     <br/>
     <br/>
