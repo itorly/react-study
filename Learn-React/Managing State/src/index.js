@@ -36,6 +36,7 @@ import AppNotResetWhenTick from "./4.Preserving and Resetting State/4.2.Same com
 import AppTickingReplaceComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.1.Different Component Types/AppTickingReplaceComponent";
 import AppDifferentParentComponentTypes from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.2.Different Parent Component Types/AppDifferentParentComponentTypes";
 import MyComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/Pitfall-do not nest component function definitions/MyComponent";
+import AppScoreboard from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/AppScoreboard";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -81,6 +82,18 @@ root.render(
     <hr/>
     <h4>Pitfall: Do not nest component function definitions</h4>
     <MyComponent />
+    <hr/>
+    <h3>4.4.Resetting state at the same position</h3>
+    <AppScoreboard />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <hr/>
     <h2>Reacting to Input with State</h2>
     <h3>Thinking about UI declaratively</h3>
