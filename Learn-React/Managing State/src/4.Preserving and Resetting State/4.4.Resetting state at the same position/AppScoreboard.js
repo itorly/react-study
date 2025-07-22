@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function Scoreboard() {
+export default function AppScoreboard() {
   const [isPlayerA, setIsPlayerA] = useState(true);
   return (
     <div>
