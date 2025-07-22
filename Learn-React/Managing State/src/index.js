@@ -37,6 +37,7 @@ import AppTickingReplaceComponent from "./4.Preserving and Resetting State/4.3.D
 import AppDifferentParentComponentTypes from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/4.3.2.Different Parent Component Types/AppDifferentParentComponentTypes";
 import MyComponent from "./4.Preserving and Resetting State/4.3.Different components at the same position reset state/Pitfall-do not nest component function definitions/MyComponent";
 import AppScoreboard from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/AppScoreboard";
+import AppScoreboardDifferentPositions from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/Option 1-Rendering a component in different positions/AppScoreboardDifferentPositions";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -85,6 +86,19 @@ root.render(
     <hr/>
     <h3>4.4.Resetting state at the same position</h3>
     <AppScoreboard />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h4>Option 1: Rendering a component in different positions</h4>
+    <AppScoreboardDifferentPositions />
     <br/>
     <br/>
     <br/>
