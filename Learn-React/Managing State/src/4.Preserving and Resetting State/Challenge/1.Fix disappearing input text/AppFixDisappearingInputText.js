@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function App() {
+export default function AppFixDisappearingInputText() {
   const [showHint, setShowHint] = useState(false);
   if (showHint) {
     return (
