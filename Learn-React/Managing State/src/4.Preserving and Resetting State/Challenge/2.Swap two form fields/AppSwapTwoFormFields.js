@@ -15,16 +15,16 @@ export default function AppSwapTwoFormFields() {
   if (reverse) {
     return (
       <>
-        <Field label="Last name" /> 
-        <Field label="First name" />
+        <Field key="2" label="Last name" /> 
+        <Field key="1" label="First name" />
         {checkbox}
       </>
     );
   } else {
     return (
       <>
-        <Field label="First name" /> 
-        <Field label="Last name" />
+        <Field key="1" label="First name" /> 
+        <Field key="2" label="Last name" />
         {checkbox}
       </>
     );    
