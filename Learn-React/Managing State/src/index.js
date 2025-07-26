@@ -42,6 +42,7 @@ import AppScoreboardWithKey from "./4.Preserving and Resetting State/4.4.Resetti
 import AppMessenger from "./4.Preserving and Resetting State/4.4.Resetting state at the same position/Resetting a form with a key/AppMessenger";
 import AppFixDisappearingInputText from "./4.Preserving and Resetting State/Challenge/1.Fix disappearing input text/AppFixDisappearingInputText";
 import AppSwapTwoFormFields from "./4.Preserving and Resetting State/Challenge/2.Swap two form fields/AppSwapTwoFormFields";
+import AppResetADetailForm from "./4.Preserving and Resetting State/Challenge/3.Reset a detail form/AppResetADetailForm";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -152,6 +153,18 @@ root.render(
     <hr/>
     <h3>Challenge 2.Swap two form fields</h3>
     <AppSwapTwoFormFields />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h3>Challenge 3.Reset a detail form</h3>
+    <AppResetADetailForm />
     <br/>
     <br/>
     <br/>
