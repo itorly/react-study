@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ContactList from './ContactList.js';
 import EditContact from './EditContact.js';
 
-export default function ContactManager() {
+export default function AppContactManager() {
   const [
     contacts,
     setContacts
@@ -35,6 +35,7 @@ export default function ContactManager() {
       />
       <hr />
       <EditContact
+        key={selectedId}
         initialData={selectedContact}
         onSave={handleSave}
       />
