@@ -2,6 +2,18 @@ import { useState } from 'react';
 import ContactList from './ContactList.js';
 import EditContact from './EditContact.js';
 
+/**
+ 1. Without key={selectedId}:
+- React sees the same EditContact component type when selectedId changes
+- It reuses the same component instance, preserving its internal state
+- The form fields don't reset because useState(initialData) only uses initialData on first render
+
+ 2. With key={selectedId}:
+- Changing selectedId changes the key, making React treat it as a different component
+- React unmounts the old instance and mounts a new one
+- The new instance initializes its state with the new initialData
+- This forces the form fields to reset to the new contact's values
+ */
 export default function AppContactManager() {
   const [
     contacts,
