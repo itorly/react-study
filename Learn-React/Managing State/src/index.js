@@ -44,6 +44,7 @@ import AppFixDisappearingInputText from "./4.Preserving and Resetting State/Chal
 import AppSwapTwoFormFields from "./4.Preserving and Resetting State/Challenge/2.Swap two form fields/AppSwapTwoFormFields";
 import AppResetADetailForm from "./4.Preserving and Resetting State/Challenge/3.Reset a detail form/AppResetADetailForm";
 import AppClearAnImageWhileItIsLoading from "./4.Preserving and Resetting State/Challenge/4.Clear an image while it is loading/AppClearAnImageWhileItIsLoading";
+import FixMisplacedStateInTheList from "./4.Preserving and Resetting State/Challenge/5.Fix misplaced state in the list/FixMisplacedStateInTheList";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -178,6 +179,18 @@ root.render(
     <hr/>
     <h3>Challenge 4.Clear an image while it is loading</h3>
     <AppClearAnImageWhileItIsLoading />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h3>Challenge 5.Fix misplaced state in the list</h3>
+    <FixMisplacedStateInTheList />
     <br/>
     <br/>
     <br/>
