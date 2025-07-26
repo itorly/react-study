@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
 import Accordion from "./3.Sharing State Between Components/3.1.Lifting state up by example/Accordion";
+import TaskApp from "./5.Extracting State Logic into a Reducer/5.1.Consolidate state logic with a reducer/TaskApp";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -49,6 +50,17 @@ import FixMisplacedStateInTheList from "./4.Preserving and Resetting State/Chall
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
+    <hr/>
+    <h2>5.Extracting State Logic into a Reducer</h2>
+    <h3>5.1.Consolidate state logic with a reducer</h3>
+    <TaskApp />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <hr/>
     <h2>4.Preserving and Resetting State</h2>
     <h3>4.1.State is tied to a position in the render tree</h3>
