@@ -5,6 +5,7 @@ import Accordion from "./3.Sharing State Between Components/3.1.Lifting state up
 import TaskApp from "./5.Extracting State Logic into a Reducer/5.1.Consolidate state logic with a reducer/TaskApp";
 import Messenger from "./5.Extracting State Logic into a Reducer/Challenge/1.Dispatch actions from event handlers/AppDispatchActionsFromEventHandlers";
 import TaskAppWithImmer from "./5.Extracting State Logic into a Reducer/5.4.Writing concise reducers with Immer/AppConciseReducersWithImmer";
+import AppMessenger from "./5.Extracting State Logic into a Reducer/Challenge/2.Clear the input on sending a message/AppMessenger";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -64,6 +65,10 @@ root.render(
     <br/>
     <h3>Challenge 1.Dispatch actions from event handlers</h3>
     <Messenger />
+    <br/>
+    <br/>
+    <h3>Challenge 2.Clear the input on sending a message</h3>
+    <AppMessenger />
     <br/>
     <br/>
     <br/>

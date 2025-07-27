@@ -3,7 +3,7 @@ import Chat from './Chat.js';
 import ContactList from './ContactList.js';
 import { initialState, messengerReducer } from './messengerReducer';
 
-export default function Messenger() {
+export default function AppMessenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
   const message = state.message;
   const contact = contacts.find((c) => c.id === state.selectedId);
