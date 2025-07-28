@@ -1,6 +1,10 @@
 export const initialState = {
   selectedId: 0,
-  message: 'Hello',
+  messages: {
+    0: 'Hello, Taylor', // Draft for contactId = 0
+    1: 'Hello, Alice', // Draft for contactId = 1
+    2: 'Hello, Bob'
+  }
 };
 
 export function messengerReducer(state, action) {
@@ -8,20 +12,28 @@ export function messengerReducer(state, action) {
     case 'changed_selection': {
       return {
         ...state,
-        selectedId: action.contactId,
-        message: '',
+        selectedId: action.contactId
       };
     }
     case 'edited_message': {
       return {
+        // Keep other state like selection
         ...state,
-        message: action.message,
+        messages: {
+          // Keep messages for other contacts
+          ...state.messages,
+          // But change the selected contact's message
+          [state.selectedId]: action.message
+        }
       };
     }
     case 'sent_message': {
       return {
         ...state,
-        message: '',
+        messages: {
+          ...state.messages,
+          [state.selectedId]: ''
+        },
       };
     }
     default: {
