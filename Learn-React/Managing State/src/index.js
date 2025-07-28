@@ -73,8 +73,12 @@ root.render(
     <br/>
     <br/>
     <br/>
+    <br/>
+    <br/>
     <h3>Challenge 2.Clear the input on sending a message</h3>
     <AppClearTheInputOnSendingAMessage />
+    <br/>
+    <br/>
     <br/>
     <br/>
     <br/>
