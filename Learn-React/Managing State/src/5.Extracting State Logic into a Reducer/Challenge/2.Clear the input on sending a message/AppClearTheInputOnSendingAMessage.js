@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 import Chat from './Chat.js';
 import ContactList from './ContactList.js';
-import { initialState, messengerReducer } from './messengerReducer';
+import { initialState, messengerReducer } from './messengerReducer.js';
 
 export default function AppMessenger() {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
