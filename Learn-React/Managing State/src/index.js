@@ -34,6 +34,8 @@ import AppMailClient from "./2.Choosing the state structure/Challenge/3.Fix the 
 import AppMailClientMultiSelection from "./2.Choosing the state structure/Challenge/4.Implement multiple selection/AppMailClientMultiSelection";
 import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synced inputs/SyncedInputs";
 import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.Filtering a list/AppFilterableList";
+import AppComponentsThatAcceptsAProp from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.1.Without Context/AppComponentsThatAcceptsAProp";
+import AppTheSameSectionTheSamePropsValue from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.1.Without Context/AppTheSameSectionTheSamePropsValue";
 import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.1/AppRenderTwoPositions";
 import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.2/AppRenderTwoComponentsSideBySide";
 import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
@@ -55,6 +57,33 @@ import FixMisplacedStateInTheList from "./4.Preserving and Resetting State/Chall
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
+    <hr/>
+    <h2>6.Passing Data Deeply with Context</h2>
+    <h3>6.2.Context: an alternative to passing props</h3>
+    <h4>6.2.1.Without Context</h4>
+    <h5>6.2.1.1.Components that accept a prop</h5>
+    <AppComponentsThatAcceptsAProp />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h5>6.2.1.2.The same section, the same props value</h5>
+    <AppTheSameSectionTheSamePropsValue />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <hr/>
     <h2>5.Extracting State Logic into a Reducer</h2>
     <h3>5.1.Consolidate state logic with a reducer</h3>
