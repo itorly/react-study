@@ -1,6 +1,6 @@
 import Heading from './Heading.js';
 import Section from './Section.js';
-import './styles.css';
+import '../styles.css';
 
 export default function Page() {
   return (
