@@ -9,6 +9,8 @@ import AppClearTheInputOnSendingAMessage from "./5.Extracting State Logic into a
 import AppRestoreInputValuesWhenSwitchingBetweenTabs from "./5.Extracting State Logic into a Reducer/Challenge/3.Restore input values when switching between tabs/AppRestoreInputValuesWhenSwitchingBetweenTabs";
 import AppImplementUseReducerFromScratch from "./5.Extracting State Logic into a Reducer/Challenge/4.Implement useReducer from scratch/AppImplementUseReducerFromScratch";
 
+import AppCreateTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 1-Create the Context/AppCreateTheContext";
+
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
 import DisplayingManyVisualStatesAtOnce from "./1.Reacting to input with state/Step 1 Identify your components different visual states/Deep Dive - Displaying many visual states at once/DisplayingManyVisualStatesAtOnce";
@@ -36,6 +38,7 @@ import SyncedInputs from "./3.Sharing State Between Components/Challenge/1.Synce
 import AppFilterableList from "./3.Sharing State Between Components/Challenge/2.Filtering a list/AppFilterableList";
 import AppComponentsThatAcceptsAProp from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.1.Without Context/AppComponentsThatAcceptsAProp";
 import AppTheSameSectionTheSamePropsValue from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.1.Without Context/AppTheSameSectionTheSamePropsValue";
+
 import AppRenderTwoPositions from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.1/AppRenderTwoPositions";
 import AppRenderTwoComponentsSideBySide from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.2/AppRenderTwoComponentsSideBySide";
 import AppKeepStateAround from "./4.Preserving and Resetting State/4.1.State is tied to a position in the render tree/4.1.3/AppRemoveComponentDestroyState";
@@ -75,6 +78,19 @@ root.render(
     <hr/>
     <h5>6.2.1.2.The same section, the same props value</h5>
     <AppTheSameSectionTheSamePropsValue />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h4>6.2.2.StepsAboutContext</h4>
+    <h5>Step 1-Create the Context</h5>
+    <AppCreateTheContext />
     <br/>
     <br/>
     <br/>
