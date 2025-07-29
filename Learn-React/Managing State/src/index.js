@@ -10,6 +10,7 @@ import AppRestoreInputValuesWhenSwitchingBetweenTabs from "./5.Extracting State 
 import AppImplementUseReducerFromScratch from "./5.Extracting State Logic into a Reducer/Challenge/4.Implement useReducer from scratch/AppImplementUseReducerFromScratch";
 
 import AppCreateTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 1-Create the Context/AppCreateTheContext";
+import AppUseTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 2-Use the Context/AppUseTheContext";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -91,6 +92,18 @@ root.render(
     <h4>6.2.2.StepsAboutContext</h4>
     <h5>Step 1-Create the Context</h5>
     <AppCreateTheContext />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h5>Step 2-Use the Context</h5>
+    <AppUseTheContext />
     <br/>
     <br/>
     <br/>
