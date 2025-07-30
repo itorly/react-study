@@ -14,6 +14,7 @@ import AppUseTheContext from "./6.Passing Data Deeply with Context/6.2.Context- 
 import AppProvideTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 3-Provide the context/AppProvideTheContext";
 import AppThSameComponentUsingAndProvidingContext from "./6.Passing Data Deeply with Context/6.3.Using and providing context from the same component/AppThSameComponentUsingAndProvidingContext";
 import AppContextPassesthroughIntermediateComponents from "./6.Passing Data Deeply with Context/6.4.Context passes through intermediate components/AppContextPassesthroughIntermediateComponents";
+import AppReplacePropDrillingWithContext from "./6.Passing Data Deeply with Context/Challenge/1.Replace prop drilling with context/AppReplacePropDrillingWithContext";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -143,6 +144,18 @@ root.render(
     <hr/>
     <h3>6.4.Context passes through intermediate components</h3>
     <AppContextPassesthroughIntermediateComponents />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h3>Challenge: Replace prop drilling with context</h3>
+    <AppReplacePropDrillingWithContext />
     <br/>
     <br/>
     <br/>
