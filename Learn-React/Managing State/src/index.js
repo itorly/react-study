@@ -12,6 +12,7 @@ import AppImplementUseReducerFromScratch from "./5.Extracting State Logic into a
 import AppCreateTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 1-Create the Context/AppCreateTheContext";
 import AppUseTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 2-Use the Context/AppUseTheContext";
 import AppProvideTheContext from "./6.Passing Data Deeply with Context/6.2.Context- an alternative to passing props/6.2.2.StepsAboutContext/Step 3-Provide the context/AppProvideTheContext";
+import AppThSameComponentUsingAndProvidingContext from "./6.Passing Data Deeply with Context/6.3.Using and providing context from the same component/AppThSameComponentUsingAndProvidingContext";
 
 import App1 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App1";
 import App2 from "./1.Reacting to input with state/Step 1 Identify your components different visual states/App2";
@@ -117,6 +118,18 @@ root.render(
     <hr/>
     <h5>Step 3-Provide the Context</h5>
     <AppProvideTheContext />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h3>6.3.Using and providing context from the same component</h3>
+    <AppThSameComponentUsingAndProvidingContext />
     <br/>
     <br/>
     <br/>
