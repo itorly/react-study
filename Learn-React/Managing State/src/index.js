@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./styles.css";
 
 import AppCombingReducerWithContext from "./7.Scaling Up with Reducer and Context/7.1.Combining a reducer with context/AppCombingReducerWithContext";
+import AppMovingAllWiringIntoASingleFile from "./7.Scaling Up with Reducer and Context/7.2.Moving all wiring into a single file/AppMovingAllWiringIntoASingleFile";
 
 import Accordion from "./3.Sharing State Between Components/3.1.Lifting state up by example/Accordion";
 import TaskApp from "./5.Extracting State Logic into a Reducer/5.1.Consolidate state logic with a reducer/TaskApp";
@@ -73,6 +74,18 @@ root.render(
     <h2>7.Scaling Up with Reducer and Context</h2>
     <h3>7.1.Combining a reducer with context</h3>
     <AppCombingReducerWithContext />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <hr/>
+    <h3>7.2.Moving all wiring into a single file</h3>
+    <AppMovingAllWiringIntoASingleFile />
     <br/>
     <br/>
     <br/>
