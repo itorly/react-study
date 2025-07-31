@@ -1,6 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
+
+import AppCombingReducerWithContext from "./7.Scaling Up with Reducer and Context/7.1.Combining a reducer with context/AppCombingReducerWithContext";
+
 import Accordion from "./3.Sharing State Between Components/3.1.Lifting state up by example/Accordion";
 import TaskApp from "./5.Extracting State Logic into a Reducer/5.1.Consolidate state logic with a reducer/TaskApp";
 import Messenger from "./5.Extracting State Logic into a Reducer/Challenge/1.Dispatch actions from event handlers/AppDispatchActionsFromEventHandlers";
@@ -65,6 +68,20 @@ import FixMisplacedStateInTheList from "./4.Preserving and Resetting State/Chall
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
+    <hr/>
+    
+    <h2>7.Scaling Up with Reducer and Context</h2>
+    <h3>7.1.Combining a reducer with context</h3>
+    <AppCombingReducerWithContext />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
     <hr/>
     <h2>6.Passing Data Deeply with Context</h2>
     <h3>6.2.Context: an alternative to passing props</h3>
