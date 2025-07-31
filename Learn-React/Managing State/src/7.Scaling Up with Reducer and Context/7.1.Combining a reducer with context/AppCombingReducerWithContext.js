@@ -2,6 +2,7 @@ import { useReducer } from 'react';
 import AddTask from './AddTask.js';
 import TaskList from './TaskList.js';
 import { TasksContext, TasksDispatchContext } from './TasksContext.js';
+import '../styles.css';
 
 export default function TaskApp() {
   const [tasks, dispatch] = useReducer(
