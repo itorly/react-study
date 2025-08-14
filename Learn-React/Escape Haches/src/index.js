@@ -5,6 +5,8 @@ import "./styles.css";
 import AppAddARef from "./1.Referencing Values with Refs/1.1.Adding a ref to your component/AppAddARef";
 import AppStopWatch from "./1.Referencing Values with Refs/1.2.Example- building a stopwatch/AppStopWatch";
 import AppStopWatchWithStop from "./1.Referencing Values with Refs/1.2.Example- building a stopwatch/AppStopWatchWithStop";
+import AppCounterWithState from "./1.Referencing Values with Refs/1.3.Differences between refs and state/AppCounterWithState";
+import AppCounterWithRef from "./1.Referencing Values with Refs/1.3.Differences between refs and state/AppCounterWithRef";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -15,5 +17,8 @@ root.render(
     <h3>1.2.Example- building a stopwatch</h3>
     <AppStopWatch />
     <AppStopWatchWithStop />
+    <h3>1.3.Differences between refs and state</h3>
+    <AppCounterWithState />
+    <AppCounterWithRef />
   </StrictMode>
 );
