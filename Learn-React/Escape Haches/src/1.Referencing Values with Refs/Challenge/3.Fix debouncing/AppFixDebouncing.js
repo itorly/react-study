@@ -1,10 +1,13 @@
-let timeoutID;
+import { useRef } from "react";
 
 function DebouncedButton({ onClick, children }) {
+  // useRef is a hook that returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). 
+    // The returned object will persist for the full lifetime of the component.
+    const timeoutIDRef = useRef(null);
   return (
     <button onClick={() => {
-      clearTimeout(timeoutID);
-      timeoutID = setTimeout(() => {
+      clearTimeout(timeoutIDRef.current);
+      timeoutIDRef.current = setTimeout(() => {
         onClick();
       }, 1000);
     }}>
