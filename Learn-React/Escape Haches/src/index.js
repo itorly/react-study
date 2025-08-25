@@ -13,7 +13,7 @@ import AppFixDebouncing from "./1.Referencing Values with Refs/Challenge/3.Fix d
 import AppReadTheLatestState from "./1.Referencing Values with Refs/Challenge/4.Read the latest state/AppReadTheLatestState";
 
 import AppForm from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.1.Example- Focusing a text input/App- Focusing a text input";
-
+import AppCatFriends from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.2.Example- Scrolling to an element/App- Scrolling to an element";
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
@@ -22,6 +22,8 @@ root.render(
     <h3>2.1.Getting a ref to the node</h3>
     <h4>2.1.1.Example- Focusing a text input</h4>
     <AppForm />
+    <h4>2.1.2.Example- Scrolling to an element</h4>
+    <AppCatFriends />
     <br />
     <br />
     <br />
