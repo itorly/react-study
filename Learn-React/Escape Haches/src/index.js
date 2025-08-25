@@ -12,10 +12,21 @@ import AppFixComponentFailingToReRender from "./1.Referencing Values with Refs/C
 import AppFixDebouncing from "./1.Referencing Values with Refs/Challenge/3.Fix debouncing/AppFixDebouncing";
 import AppReadTheLatestState from "./1.Referencing Values with Refs/Challenge/4.Read the latest state/AppReadTheLatestState";
 
+import AppForm from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.1.Example- Focusing a text input/App- Focusing a text input";
+
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
-    <h2>Referencing Values with Refs</h2>
+
+    <h2>2.Manipulating the DOM with Refs</h2>
+    <h3>2.1.Getting a ref to the node</h3>
+    <h4>2.1.1.Example- Focusing a text input</h4>
+    <AppForm />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <h2>1.Referencing Values with Refs</h2>
     <h3>1.1.Adding a ref to your component</h3>
     <AppAddARef />
     <h3>1.2.Example- building a stopwatch</h3>
