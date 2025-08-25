@@ -16,6 +16,7 @@ import AppForm from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the
 import AppCatFriends from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.2.Example- Scrolling to an element/App- Scrolling to an element";
 import AppRefCallback from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/DEEP DIVE- How to manage a list of refs using a ref callback/App- manage a list of refs using a ref callback";
 import AppAccessingDOMNodesOfAnotherComponent from "./2.Manipulating the DOM with Refs/2.2.Accessing another component’s DOM nodes/AppAccessingDOMNodesOfAnotherComponent";
+import AppExposeImperativeHandle from "./2.Manipulating the DOM with Refs/2.2.Accessing another component’s DOM nodes/DEEP DIVE- Exposing a subset of the API with an imperative handle/Exposing a subset of the API with an imperative handle.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -31,6 +32,8 @@ root.render(
     <AppRefCallback />
     <h4>2.2.Accessing another component’s DOM nodes</h4>
     <AppAccessingDOMNodesOfAnotherComponent />
+    <h4>DEEP DIVE: Exposing a subset of the API with an imperative handle</h4>
+    <AppExposeImperativeHandle />
     <br />
     <br />
     <br />
