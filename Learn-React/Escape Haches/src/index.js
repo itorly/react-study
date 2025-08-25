@@ -18,6 +18,7 @@ import AppRefCallback from "./2.Manipulating the DOM with Refs/2.1.Getting a ref
 import AppAccessingDOMNodesOfAnotherComponent from "./2.Manipulating the DOM with Refs/2.2.Accessing another component’s DOM nodes/AppAccessingDOMNodesOfAnotherComponent";
 import AppExposeImperativeHandle from "./2.Manipulating the DOM with Refs/2.2.Accessing another component’s DOM nodes/DEEP DIVE- Exposing a subset of the API with an imperative handle/Exposing a subset of the API with an imperative handle.js";
 import AppScrollingLagsBehind from "./2.Manipulating the DOM with Refs/2.3.When React attaches the refs/DEEP DIVE- Flushing state updates synchronously with flushSync/scrolling always lags behind by one item.js";
+import AppFlushSync from "./2.Manipulating the DOM with Refs/2.3.When React attaches the refs/DEEP DIVE- Flushing state updates synchronously with flushSync/Flushing state updates synchronously with flushSync.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -38,6 +39,7 @@ root.render(
     <h3>2.3.When React attaches the refs</h3>
     <h4>DEEP DIVE: Flushing state updates synchronously with flushSync</h4>
     <AppScrollingLagsBehind />
+    <AppFlushSync />
     <br />
     <br />
     <br />
