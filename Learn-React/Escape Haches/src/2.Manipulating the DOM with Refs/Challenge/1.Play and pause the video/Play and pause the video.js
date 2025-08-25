@@ -22,6 +22,8 @@ export default function VideoPlayer() {
       </button>
       <video width="250" 
         ref={videoRef} 
+        // After the video finishes playing, the button automatically resets to the "play" label.
+        onPlay={() => setIsPlaying(true)} onPause={() => setIsPlaying(false)}
       >
         <source
           src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
