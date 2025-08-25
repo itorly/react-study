@@ -15,6 +15,8 @@ import AppReadTheLatestState from "./1.Referencing Values with Refs/Challenge/4.
 import AppForm from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.1.Example- Focusing a text input/App- Focusing a text input";
 import AppCatFriends from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/2.1.2.Example- Scrolling to an element/App- Scrolling to an element";
 import AppRefCallback from "./2.Manipulating the DOM with Refs/2.1.Getting a ref to the node/DEEP DIVE- How to manage a list of refs using a ref callback/App- manage a list of refs using a ref callback";
+import AppAccessingDOMNodesOfAnotherComponent from "./2.Manipulating the DOM with Refs/2.2.Accessing another component’s DOM nodes/AppAccessingDOMNodesOfAnotherComponent";
+
 const root = createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>
@@ -27,6 +29,8 @@ root.render(
     <AppCatFriends />
     <h4>DEEP DIVE: How to manage a list of refs using a ref callback</h4>
     <AppRefCallback />
+    <h4>2.2.Accessing another component’s DOM nodes</h4>
+    <AppAccessingDOMNodesOfAnotherComponent />
     <br />
     <br />
     <br />
