@@ -20,6 +20,7 @@ import AppExposeImperativeHandle from "./2.Manipulating the DOM with Refs/2.2.Ac
 import AppScrollingLagsBehind from "./2.Manipulating the DOM with Refs/2.3.When React attaches the refs/DEEP DIVE- Flushing state updates synchronously with flushSync/scrolling always lags behind by one item.js";
 import AppFlushSync from "./2.Manipulating the DOM with Refs/2.3.When React attaches the refs/DEEP DIVE- Flushing state updates synchronously with flushSync/Flushing state updates synchronously with flushSync.js";
 import AppBestPracticesForDOMManipulationWithRefs from "./2.Manipulating the DOM with Refs/2.4.Best practices for DOM manipulation with refs/Best practices for DOM manipulation with refs.js";
+import AppPlayPauseVideo from "./2.Manipulating the DOM with Refs/Challenge/1.Play and pause the video/Play and pause the video.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -43,6 +44,8 @@ root.render(
     <AppFlushSync />
     <h3>2.4.Best practices for DOM manipulation with refs</h3>
     <AppBestPracticesForDOMManipulationWithRefs />
+    <h4>Challenge: Play and pause the video</h4>
+    <AppPlayPauseVideo />
     <br />
     <br />
     <br />
