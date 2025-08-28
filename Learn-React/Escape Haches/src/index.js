@@ -23,6 +23,7 @@ import AppBestPracticesForDOMManipulationWithRefs from "./2.Manipulating the DOM
 import AppPlayPauseVideo from "./2.Manipulating the DOM with Refs/Challenge/1.Play and pause the video/Play and pause the video.js";
 import AppFocusSearchField from "./2.Manipulating the DOM with Refs/Challenge/2.Focus the search field/Focus the search field.js";
 import AppScrollingImageCarousel from "./2.Manipulating the DOM with Refs/Challenge/3.Scrolling an image carousel/Scrolling an image carousel.js";
+import AppFocusSearchFieldSeparate from "./2.Manipulating the DOM with Refs/Challenge/4.Focus the search field with separate/Focus the search field with separate.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -52,6 +53,8 @@ root.render(
     <AppFocusSearchField />
     <h4>Challenge 3: Scrolling an image carousel</h4>
     <AppScrollingImageCarousel />
+    <h4>Challenge 4: Focus the search field with separate</h4>
+    <AppFocusSearchFieldSeparate />
     <br />
     <br />
     <br />
