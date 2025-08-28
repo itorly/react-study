@@ -22,6 +22,7 @@ import AppFlushSync from "./2.Manipulating the DOM with Refs/2.3.When React atta
 import AppBestPracticesForDOMManipulationWithRefs from "./2.Manipulating the DOM with Refs/2.4.Best practices for DOM manipulation with refs/Best practices for DOM manipulation with refs.js";
 import AppPlayPauseVideo from "./2.Manipulating the DOM with Refs/Challenge/1.Play and pause the video/Play and pause the video.js";
 import AppFocusSearchField from "./2.Manipulating the DOM with Refs/Challenge/2.Focus the search field/Focus the search field.js";
+import AppScrollingImageCarousel from "./2.Manipulating the DOM with Refs/Challenge/3.Scrolling an image carousel/Scrolling an image carousel.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -45,10 +46,12 @@ root.render(
     <AppFlushSync />
     <h3>2.4.Best practices for DOM manipulation with refs</h3>
     <AppBestPracticesForDOMManipulationWithRefs />
-    <h4>Challenge: Play and pause the video</h4>
+    <h4>Challenge 1: Play and pause the video</h4>
     <AppPlayPauseVideo />
-    <h4>Challenge: Focus the search field</h4>
+    <h4>Challenge 2: Focus the search field</h4>
     <AppFocusSearchField />
+    <h4>Challenge 3: Scrolling an image carousel</h4>
+    <AppScrollingImageCarousel />
     <br />
     <br />
     <br />
