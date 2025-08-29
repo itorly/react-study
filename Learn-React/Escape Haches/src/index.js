@@ -24,6 +24,7 @@ import AppPlayPauseVideo from "./2.Manipulating the DOM with Refs/Challenge/1.Pl
 import AppFocusSearchField from "./2.Manipulating the DOM with Refs/Challenge/2.Focus the search field/Focus the search field.js";
 import AppScrollingImageCarousel from "./2.Manipulating the DOM with Refs/Challenge/3.Scrolling an image carousel/Scrolling an image carousel.js";
 import AppFocusSearchFieldSeparate from "./2.Manipulating the DOM with Refs/Challenge/4.Focus the search field with separate/Focus the search field with separate.js";
+import AppDeclareAnEffect from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 1- Declare an Effect/AppDeclareAnEffect.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -55,6 +56,11 @@ root.render(
     <AppScrollingImageCarousel />
     <h4>Challenge 4: Focus the search field with separate</h4>
     <AppFocusSearchFieldSeparate />
+    <br />
+    <h2>3.Synchronizing with Effects</h2>
+    <h3>3.3.How to write an Effect</h3>
+    <h4>Step 1 - Declare an Effect</h4>
+    <AppDeclareAnEffect />
     <br />
     <br />
     <br />
