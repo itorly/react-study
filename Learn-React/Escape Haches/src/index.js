@@ -26,6 +26,7 @@ import AppScrollingImageCarousel from "./2.Manipulating the DOM with Refs/Challe
 import AppFocusSearchFieldSeparate from "./2.Manipulating the DOM with Refs/Challenge/4.Focus the search field with separate/Focus the search field with separate.js";
 import AppDeclareAnEffect from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 1- Declare an Effect/AppDeclareAnEffect.js";
 import AppTypingCausesEffectRerun from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/how typing causes the Effect to re-run.js";
+import AppSpecifyEffectDependency from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/Specify the Effect dependency.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -64,6 +65,8 @@ root.render(
     <AppDeclareAnEffect />
     <h4>Step 2 - Specify the Effect dependencies (how typing causes the Effect to re-run)</h4>
     <AppTypingCausesEffectRerun />
+    <h4>Step 2 - Specify the Effect dependency (explicit example)</h4>
+    <AppSpecifyEffectDependency />
     <br />
     <br />
     <br />
