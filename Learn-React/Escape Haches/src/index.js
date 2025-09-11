@@ -27,6 +27,7 @@ import AppFocusSearchFieldSeparate from "./2.Manipulating the DOM with Refs/Chal
 import AppDeclareAnEffect from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 1- Declare an Effect/AppDeclareAnEffect.js";
 import AppTypingCausesEffectRerun from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/how typing causes the Effect to re-run.js";
 import AppSpecifyEffectDependency from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/Specify the Effect dependency.js";
+import AppStep3 from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 3- Add cleanup if needed/AppStep3.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -67,6 +68,8 @@ root.render(
     <AppTypingCausesEffectRerun />
     <h4>Step 2 - Specify the Effect dependency (explicit example)</h4>
     <AppSpecifyEffectDependency />
+    <h4>Step 3 - Add cleanup if needed</h4>
+    <AppStep3 />
     <br />
     <br />
     <br />
