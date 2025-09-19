@@ -28,6 +28,7 @@ import AppDeclareAnEffect from "./3.Synchronizing with Effects/3.3.How to write 
 import AppTypingCausesEffectRerun from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/how typing causes the Effect to re-run.js";
 import AppSpecifyEffectDependency from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 2- Specify the Effect dependencies/Specify the Effect dependency.js";
 import AppStep3 from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 3- Add cleanup if needed/AppStep3.js";
+import AppMount from "./3.Synchronizing with Effects/3.6.Putting it all together/Mount.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -70,6 +71,8 @@ root.render(
     <AppSpecifyEffectDependency />
     <h4>Step 3 - Add cleanup if needed</h4>
     <AppStep3 />
+    <h4>3.6.Putting it all together — Mount</h4>
+    <AppMount />
     <br />
     <br />
     <br />
