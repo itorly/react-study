@@ -4,10 +4,13 @@
 
 ### What can effects do?
  Effects let you run some code after rendering so that you can synchronize your component with some system outside of React.
- By default, your Effect will run after every commit.
 
- ### Do not re-run unless necessary
- Most Effects should only re-run when needed rather than after every render. 
+### Do not re-run unless necessary
+Most Effects should only re-run when needed rather than after every render. 
+
+### When will an Effect run?
+By default, your Effect will run after every commit.
+
 
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
