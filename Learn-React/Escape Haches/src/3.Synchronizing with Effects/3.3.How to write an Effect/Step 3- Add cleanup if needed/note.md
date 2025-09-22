@@ -15,6 +15,9 @@ Tell React to skip unnecessarily re-running the Effect by specifying an array of
 Start by adding an empty [] array.
 Then add the dependencies(props) to the array.
 
+### What is the function of the added dependencies?
+The dependency array can contain multiple dependencies. React will only skip re-running the Effect if all of the dependencies you specify have exactly the same values as they had during the previous render.
+
 ### When will an Effect run?
 By default, your Effect will run after every commit.
 
