@@ -54,5 +54,8 @@ Effects run as a result of rendering. Setting state triggers rendering. Setting 
 ### Why was the ref omitted from the dependency array?
 This is because the ref object has a stable identity: React guarantees you’ll always get the same object from the same useRef call on every render. It never changes, so it will never by itself cause the Effect to re-run. Therefore, it does not matter whether you include it or not.
 
+### Omitting always-stable dependencies only works when the linter can “see” that the object is stable
+For example, if ref was passed from a parent component, you would have to specify it in the dependency array. However, this is good because you can’t know whether the parent component always passes the same ref, or passes one of several refs conditionally. So your Effect would depend on which ref is passed.
+
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
