@@ -18,6 +18,9 @@ Then add the dependencies(props) to the array.
 ### What is the function of the added dependencies?
 The dependency array can contain multiple dependencies. React will only skip re-running the Effect if all of the dependencies you specify have exactly the same values as they had during the previous render.
 
+### How does React compare dependency values?
+React compares the dependency values using the Object.is comparison. See the useEffect reference for details.
+
 ### When will an Effect run?
 By default, your Effect will run after every commit.
 
