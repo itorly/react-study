@@ -9,4 +9,5 @@
  ### Do not re-run unless necessary
  Most Effects should only re-run when needed rather than after every render. 
 
+### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
