@@ -20,5 +20,8 @@ In React, rendering should be a pure calculation of JSX and should not contain s
 ### wrap legacy non-React code 
 You can use a similar approach to wrap legacy non-React code (like jQuery plugins) into declarative React components.
 
+### Why do not use Effects for state calculations?
+Effects run as a result of rendering. Setting state triggers rendering. Setting state immediately in an Effect is like plugging a power outlet into itself. The Effect runs, it sets the state, which causes a re-render, which causes the Effect to run, it sets the state again, this causes another re-render, and so on.
+
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
