@@ -21,6 +21,21 @@ The dependency array can contain multiple dependencies. React will only skip re-
 ### How does React compare dependency values?
 React compares the dependency values using the Object.is comparison. See the useEffect reference for details.
 
+### The difference between the behaviors without the dependency array and with an empty [] dependency array
+```js
+useEffect(() => {
+  // This runs after every render
+});
+
+useEffect(() => {
+  // This runs only on mount (when the component appears)
+}, []);
+
+useEffect(() => {
+  // This runs on mount *and also* if either a or b have changed since the last render
+}, [a, b]);
+```
+
 ### When will an Effect run?
 By default, your Effect will run after every commit.
 
