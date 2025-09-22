@@ -17,5 +17,8 @@ Every time your component renders, React will update the screen and then run the
 ### Why do we need Effects?
 In React, rendering should be a pure calculation of JSX and should not contain side effects like modifying the DOM.
 
+### wrap legacy non-React code 
+You can use a similar approach to wrap legacy non-React code (like jQuery plugins) into declarative React components.
+
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
