@@ -8,6 +8,9 @@
 ### Do not re-run unless necessary
 Most Effects should only re-run when needed rather than after every render. 
 
+### skip unnecessarily re-running the Effect
+Tell React to skip unnecessarily re-running the Effect by specifying an array of dependencies as the second argument to the useEffect call. 
+
 ### When will an Effect run?
 By default, your Effect will run after every commit.
 
