@@ -14,5 +14,8 @@ By default, your Effect will run after every commit.
 ### When does React run the code inside useEffect?
 Every time your component renders, React will update the screen and then run the code inside useEffect. In other words, useEffect “delays” a piece of code from running until that render is reflected on the screen.
 
+### Why do we need Effects?
+In React, rendering should be a pure calculation of JSX and should not contain side effects like modifying the DOM.
+
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
