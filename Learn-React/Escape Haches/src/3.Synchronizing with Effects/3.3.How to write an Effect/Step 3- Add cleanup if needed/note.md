@@ -51,5 +51,8 @@ You can use a similar approach to wrap legacy non-React code (like jQuery plugin
 ### Why do not use Effects for state calculations?
 Effects run as a result of rendering. Setting state triggers rendering. Setting state immediately in an Effect is like plugging a power outlet into itself. The Effect runs, it sets the state, which causes a re-render, which causes the Effect to run, it sets the state again, this causes another re-render, and so on.
 
+### Why was the ref omitted from the dependency array?
+This is because the ref object has a stable identity: React guarantees you’ll always get the same object from the same useRef call on every render. It never changes, so it will never by itself cause the Effect to re-run. Therefore, it does not matter whether you include it or not.
+
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
