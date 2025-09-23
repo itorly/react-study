@@ -59,3 +59,6 @@ For example, if ref was passed from a parent component, you would have to specif
 
 ### What does “mount” mean?
 when the component “mounts”, i.e. appears on the screen for the first time.
+
+### Why does React remount components?
+To help you spot them quickly, in development React remounts every component once immediately after its initial mount.
