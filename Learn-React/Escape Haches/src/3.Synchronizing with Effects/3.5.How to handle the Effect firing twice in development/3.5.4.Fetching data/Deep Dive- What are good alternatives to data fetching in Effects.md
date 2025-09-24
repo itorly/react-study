@@ -8,3 +8,12 @@
 * Fetching directly in Effects usually means you don’t preload or cache data.
 
 * It’s not very ergonomic. 
+
+
+### recommended approaches
+
+* If you use a framework, use its built-in data fetching mechanism.
+
+* Otherwise, consider using or building a client-side cache.
+
+* You can continue fetching data directly in Effects if neither of these approaches suit you.
