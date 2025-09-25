@@ -30,6 +30,7 @@ import AppSpecifyEffectDependency from "./3.Synchronizing with Effects/3.3.How t
 import AppStep3 from "./3.Synchronizing with Effects/3.3.How to write an Effect/Step 3- Add cleanup if needed/AppStep3.js";
 import AppMount from "./3.Synchronizing with Effects/3.6.Putting it all together/Mount.js";
 import AppFocusAFieldOnMount from "./3.Synchronizing with Effects/Challenge/1.Focus a field on mount/AppFocusAFieldOnMount.js";
+import AppFocusAFieldConditionally from "./3.Synchronizing with Effects/Challenge/2.Focus a field conditionally/AppFocusAFieldConditionally.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -74,8 +75,10 @@ root.render(
     <AppStep3 />
     <h4>3.6.Putting it all together — Mount</h4>
     <AppMount />
-    <h4>Challenge: Focus a field on mount</h4>
+    <h4>Challenge 1: Focus a field on mount</h4>
     <AppFocusAFieldOnMount />
+    <h4>Challenge 2: Focus a field conditionally</h4>
+    <AppFocusAFieldConditionally />
     <br />
     <br />
     <br />
