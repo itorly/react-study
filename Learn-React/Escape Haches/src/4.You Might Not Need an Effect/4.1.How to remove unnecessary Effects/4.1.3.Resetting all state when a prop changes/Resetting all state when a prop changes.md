@@ -46,3 +46,7 @@ By passing userId as a key to the Profile component, you’re asking React to tr
 Whenever the key (which you’ve set to userId) changes, React will recreate the DOM and reset the state of the Profile component and all of its children. 
 
 Now the comment field will clear out automatically when navigating between profiles.
+
+## Components rendering ProfilePage pass userId as a regular prop 
+
+Note that in this example, only the outer ProfilePage component is exported and visible to other files in the project. Components rendering ProfilePage don’t need to pass the key to it: they pass userId as a regular prop. The fact ProfilePage passes it as a key to the inner Profile component is an implementation detail.
