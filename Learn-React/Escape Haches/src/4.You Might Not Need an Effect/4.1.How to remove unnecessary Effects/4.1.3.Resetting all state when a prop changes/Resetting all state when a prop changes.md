@@ -37,3 +37,12 @@ function Profile({ userId }) {
   // ...
 }
 ```
+
+###  two different components should not share any state
+Normally, React preserves the state when the same component is rendered in the same spot. 
+
+By passing userId as a key to the Profile component, you’re asking React to treat two Profile components with different userId as two different components that should not share any state. 
+
+Whenever the key (which you’ve set to userId) changes, React will recreate the DOM and reset the state of the Profile component and all of its children. 
+
+Now the comment field will clear out automatically when navigating between profiles.
