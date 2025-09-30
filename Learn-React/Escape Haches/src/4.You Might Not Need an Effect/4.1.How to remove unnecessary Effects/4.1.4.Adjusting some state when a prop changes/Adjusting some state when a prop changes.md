@@ -18,3 +18,9 @@ function List({ items }) {
   // ...
 }
 ```
+
+## Analysis: Why not ideal?
+This, too, is not ideal. 
+1. Every time the items change, the List and its child components will render with a stale selection value at first. 
+2. Then React will update the DOM and run the Effects. 
+3. Finally, the setSelection(null) call will cause another re-render of the List and its child components, restarting this whole process again.
