@@ -26,3 +26,8 @@ function ProductPage({ product, addToCart }) {
 ```
 ### Analysis: This Effect is unnecessary
 This Effect is unnecessary. It will also most likely cause bugs. For example, let’s say that your app “remembers” the shopping cart between the page reloads. If you add a product to the cart once and refresh the page, the notification will appear again. It will keep appearing every time you refresh that product’s page. This is because product.isInCart will already be true on the page load, so the Effect above will call showNotification().
+
+## determine whether to put some code in an Effect or an event handler
+When you’re not sure whether some code should be in an Effect or in an event handler, ask yourself why this code needs to run. Use Effects only for code that should run because the component was displayed to the user. 
+
+In this example, the notification should appear because the user pressed the button, not because the page was displayed! 
