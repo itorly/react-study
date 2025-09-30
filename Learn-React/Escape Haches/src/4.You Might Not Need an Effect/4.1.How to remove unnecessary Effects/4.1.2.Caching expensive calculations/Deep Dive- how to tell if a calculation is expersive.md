@@ -25,5 +25,8 @@ console.timeEnd('filter array');
 ### prons and cons of useMemo
 useMemo won’t make the first render faster. It only helps you skip unnecessary work on updates.
 
-### test the performance with an artificial slowdown
+## test the performance with an artificial slowdown
 Keep in mind that your machine is probably faster than your users’ so it’s a good idea to test the performance with an artificial slowdown. For example, Chrome offers a CPU Throttling option for this.
+
+## How to get the most accurate timings
+Also note that measuring performance in development will not give you the most accurate results. (For example, when Strict Mode is on, you will see each component render twice rather than once.) To get the most accurate timings, build your app for production and test it on a device like your users have.
