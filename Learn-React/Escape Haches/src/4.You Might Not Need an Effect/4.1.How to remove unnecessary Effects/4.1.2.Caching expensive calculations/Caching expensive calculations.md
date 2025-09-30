@@ -1,5 +1,7 @@
 This component computes visibleTodos by taking the todos it receives by props and filtering them according to the filter prop. 
 
+
+## Avoid: redundant state and unnecessary Effect
 ```js
 function TodoList({ todos, filter }) {
   const [newTodo, setNewTodo] = useState('');
@@ -13,7 +15,7 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
-
+## fine if getFilteredTodos() is not slow
 
 ```js
 function TodoList({ todos, filter }) {
@@ -23,4 +25,10 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
-Usually, this code is fine! But maybe getFilteredTodos() is slow or you have a lot of todos. In that case you don’t want to recalculate getFilteredTodos() if some unrelated state variable like newTodo has changed.
+Usually, this code is fine! 
+
+## But what if getFilteredTodos() is slow?
+But maybe getFilteredTodos() is slow or you have a lot of todos. In that case you don’t want to recalculate getFilteredTodos() if some unrelated state variable like newTodo has changed.
+
+
+
