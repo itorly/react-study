@@ -31,4 +31,17 @@ Usually, this code is fine!
 But maybe getFilteredTodos() is slow or you have a lot of todos. In that case you don’t want to recalculate getFilteredTodos() if some unrelated state variable like newTodo has changed.
 
 
+## useMemo
+You can cache (or “memoize”) an expensive calculation by wrapping it in a useMemo Hook.
+```js
+import { useMemo, useState } from 'react';
 
+function TodoList({ todos, filter }) {
+  const [newTodo, setNewTodo] = useState('');
+  const visibleTodos = useMemo(() => {
+    // ✅ Does not re-run unless todos or filter change
+    return getFilteredTodos(todos, filter);
+  }, [todos, filter]);
+  // ...
+}
+```
