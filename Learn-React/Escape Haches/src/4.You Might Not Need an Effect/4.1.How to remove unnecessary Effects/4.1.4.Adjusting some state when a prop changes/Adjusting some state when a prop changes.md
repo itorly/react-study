@@ -48,3 +48,7 @@ When you update a component during rendering, React throws away the returned JSX
 
 ### disadvantage
 Although this pattern is more efficient than an Effect, most components shouldn’t need it either. No matter how you do it, adjusting state based on props or other state makes your data flow more difficult to understand and debug. 
+
+## Another solution
+ Always check whether you can reset all state with a key or calculate everything during rendering instead. For example, instead of storing (and resetting) the selected item, you can store the selected item ID:
+ 
