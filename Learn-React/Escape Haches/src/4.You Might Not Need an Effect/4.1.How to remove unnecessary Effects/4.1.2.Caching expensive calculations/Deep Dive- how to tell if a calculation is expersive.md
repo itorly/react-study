@@ -24,3 +24,6 @@ console.timeEnd('filter array');
 ```
 ### prons and cons of useMemo
 useMemo won’t make the first render faster. It only helps you skip unnecessary work on updates.
+
+### test the performance with an artificial slowdown
+Keep in mind that your machine is probably faster than your users’ so it’s a good idea to test the performance with an artificial slowdown. For example, Chrome offers a CPU Throttling option for this.
