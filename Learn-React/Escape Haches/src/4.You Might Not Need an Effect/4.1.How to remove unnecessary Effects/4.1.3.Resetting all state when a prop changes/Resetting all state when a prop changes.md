@@ -18,4 +18,22 @@ export default function ProfilePage({ userId }) {
 This is inefficient because ProfilePage and its children will first render with the stale value, and then render again. It is also complicated because you’d need to do this in every component that has some state inside ProfilePage. For example, if the comment UI is nested, you’d want to clear out nested comment state too.
 
 ## Solution: a different profile, an explicit key
-Instead, you can tell React that each user’s profile is conceptually a different profile by giving it an explicit key. Split your component in two and pass a key attribute from the outer component to the inner one:
+Instead, you can tell React that each user’s profile is conceptually a different profile by giving it an explicit key. 
+### Split your component in two and pass a key attribute from the outer component to the inner one:
+
+```js
+export default function ProfilePage({ userId }) {
+  return (
+    <Profile
+      userId={userId}
+      key={userId}
+    />
+  );
+}
+
+function Profile({ userId }) {
+  // ✅ This and any other state below will reset on key change automatically
+  const [comment, setComment] = useState('');
+  // ...
+}
+```
