@@ -1,0 +1,1 @@
+# Sharing logic between event handlers
