@@ -24,3 +24,5 @@ function ProductPage({ product, addToCart }) {
   // ...
 }
 ```
+### Analysis: This Effect is unnecessary
+This Effect is unnecessary. It will also most likely cause bugs. For example, let’s say that your app “remembers” the shopping cart between the page reloads. If you add a product to the cart once and refresh the page, the notification will appear again. It will keep appearing every time you refresh that product’s page. This is because product.isInCart will already be true on the page load, so the Effect above will call showNotification().
