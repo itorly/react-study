@@ -45,3 +45,6 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
+
+## useMemo Compiler Note
+React Compiler can automatically memoize expensive calculations for you, eliminating the need for manual useMemo in many cases.
