@@ -32,6 +32,7 @@ import AppMount from "./3.Synchronizing with Effects/3.6.Putting it all together
 import AppFocusAFieldOnMount from "./3.Synchronizing with Effects/Challenge/1.Focus a field on mount/AppFocusAFieldOnMount.js";
 import AppFocusAFieldConditionally from "./3.Synchronizing with Effects/Challenge/2.Focus a field conditionally/AppFocusAFieldConditionally.js";
 import AppFixAnIntervalThatFiresTwice from "./3.Synchronizing with Effects/Challenge/3.Fix an interval that fires twice/AppFixAnIntervalThatFiresTwice.js";
+import AppFixFechingInsideAnEffect from "./3.Synchronizing with Effects/Challenge/4.Fix fetching inside an Effect/AppFixFechingInsideAnEffect.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -82,6 +83,8 @@ root.render(
     <AppFocusAFieldConditionally />
     <h4>Challenge 3: Fix an interval that fires twice</h4>
     <AppFixAnIntervalThatFiresTwice />
+    <h4>Challenge 4: Fix fetching inside an Effect</h4>
+    <AppFixFechingInsideAnEffect />
     <br />
     <br />
     <br />
