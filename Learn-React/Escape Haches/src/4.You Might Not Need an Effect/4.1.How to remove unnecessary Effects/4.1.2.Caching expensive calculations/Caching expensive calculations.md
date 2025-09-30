@@ -45,6 +45,8 @@ function TodoList({ todos, filter }) {
   // ...
 }
 ```
+This tells React that you don’t want the inner function to re-run unless either todos or filter have changed.
+ React will remember the return value of getFilteredTodos() during the initial render. During the next renders, it will check if todos or filter are different. If they’re the same as last time, useMemo will return the last result it has stored. But if they are different, React will call the inner function again (and store its result).
 
 ## useMemo Compiler Note
 React Compiler can automatically memoize expensive calculations for you, eliminating the need for manual useMemo in many cases.
