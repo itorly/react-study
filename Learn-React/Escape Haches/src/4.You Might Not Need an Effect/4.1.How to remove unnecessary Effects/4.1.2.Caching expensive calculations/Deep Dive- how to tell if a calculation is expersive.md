@@ -12,3 +12,13 @@ console.timeEnd('filter array');
 ```
 ## make sense to memoize that calculation
 Perform the interaction you’re measuring (for example, typing into the input). You will then see logs like filter array: 0.15ms in your console. If the overall logged time adds up to a significant amount (say, 1ms or more), it might make sense to memoize that calculation. 
+
+## wrap the calculation in useMemo
+As an experiment, you can then wrap the calculation in useMemo to verify whether the total logged time has decreased for that interaction or not:
+```js
+console.time('filter array');
+const visibleTodos = useMemo(() => {
+  return getFilteredTodos(todos, filter); // Skipped if todos and filter haven't changed
+}, [todos, filter]);
+console.timeEnd('filter array');
+```
