@@ -10,3 +10,5 @@ console.time('filter array');
 const visibleTodos = getFilteredTodos(todos, filter);
 console.timeEnd('filter array');
 ```
+## make sense to memoize that calculation
+Perform the interaction you’re measuring (for example, typing into the input). You will then see logs like filter array: 0.15ms in your console. If the overall logged time adds up to a significant amount (say, 1ms or more), it might make sense to memoize that calculation. 
