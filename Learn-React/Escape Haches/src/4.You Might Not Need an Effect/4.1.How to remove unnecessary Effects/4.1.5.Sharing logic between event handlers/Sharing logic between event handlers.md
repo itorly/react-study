@@ -31,3 +31,24 @@ This Effect is unnecessary. It will also most likely cause bugs. For example, le
 When you’re not sure whether some code should be in an Effect or in an event handler, ask yourself why this code needs to run. Use Effects only for code that should run because the component was displayed to the user. 
 
 In this example, the notification should appear because the user pressed the button, not because the page was displayed! 
+
+## Solution: Good: Event-specific logic is called from event handlers
+put the shared logic into a function called from both event handlers:
+```js
+function ProductPage({ product, addToCart }) {
+  // ✅ Good: Event-specific logic is called from event handlers
+  function buyProduct() {
+    addToCart(product);
+    showNotification(`Added ${product.name} to the shopping cart!`);
+  }
+
+  function handleBuyClick() {
+    buyProduct();
+  }
+
+  function handleCheckoutClick() {
+    buyProduct();
+    navigateTo('/checkout');
+  }
+  // ...
+}
