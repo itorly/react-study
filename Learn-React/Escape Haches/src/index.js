@@ -31,6 +31,7 @@ import AppStep3 from "./3.Synchronizing with Effects/3.3.How to write an Effect/
 import AppMount from "./3.Synchronizing with Effects/3.6.Putting it all together/Mount.js";
 import AppFocusAFieldOnMount from "./3.Synchronizing with Effects/Challenge/1.Focus a field on mount/AppFocusAFieldOnMount.js";
 import AppFocusAFieldConditionally from "./3.Synchronizing with Effects/Challenge/2.Focus a field conditionally/AppFocusAFieldConditionally.js";
+import AppFixAnIntervalThatFiresTwice from "./3.Synchronizing with Effects/Challenge/3.Fix an interval that fires twice/AppFixAnIntervalThatFiresTwice.js";
 
 const root = createRoot(document.getElementById("root"));
 root.render(
@@ -79,6 +80,8 @@ root.render(
     <AppFocusAFieldOnMount />
     <h4>Challenge 2: Focus a field conditionally</h4>
     <AppFocusAFieldConditionally />
+    <h4>Challenge 3: Fix an interval that fires twice</h4>
+    <AppFixAnIntervalThatFiresTwice />
     <br />
     <br />
     <br />
