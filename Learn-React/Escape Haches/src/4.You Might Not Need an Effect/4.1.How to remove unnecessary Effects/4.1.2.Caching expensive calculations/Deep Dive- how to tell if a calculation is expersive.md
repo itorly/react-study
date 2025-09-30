@@ -22,3 +22,5 @@ const visibleTodos = useMemo(() => {
 }, [todos, filter]);
 console.timeEnd('filter array');
 ```
+### prons and cons of useMemo
+useMemo won’t make the first render faster. It only helps you skip unnecessary work on updates.
