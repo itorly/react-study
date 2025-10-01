@@ -33,4 +33,5 @@ function Form() {
 ### the reason to send the analytics event is that the form was displayed: Effect
 The analytics POST request should remain in an Effect. This is because the reason to send the analytics event is that the form was displayed. (It would fire twice in development, but see here for how to deal with that.)
 
-
+### interaction: not Effect
+However, the /api/register POST request is not caused by the form being displayed. You only want to send the request at one specific moment in time: when the user presses the button. It should only ever happen on that particular interaction. 
