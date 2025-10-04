@@ -52,3 +52,36 @@ Multiple unnecessary re-renders cascade through the component tree:
 
 ### 2. Maintenance Problem
 The code becomes rigid and fragile as requirements evolve. Example: Adding a game history feature that sets `card` to a past value would trigger the entire Effect chain again, incorrectly updating all dependent data.
+
+## The Solution: Calculate in Render & Update in Event Handler
+
+```javascript
+function Game() {
+  const [card, setCard] = useState(null);
+  const [goldCardCount, setGoldCardCount] = useState(0);
+  const [round, setRound] = useState(1);
+  
+  // ✅ Calculate what you can during rendering
+  const isGameOver = round > 5;
+
+  function handlePlaceCard(nextCard) {
+    if (isGameOver) {
+      throw Error('Game already ended.');
+    }
+    
+    // ✅ Calculate all the next state in the event handler
+    setCard(nextCard);
+    if (nextCard.gold) {
+      if (goldCardCount <= 3) {
+        setGoldCardCount(goldCardCount + 1);
+      } else {
+        setGoldCardCount(0);
+        setRound(round + 1);
+        if (round === 5) {
+          alert('Good game!');
+        }
+      }
+    }
+  }
+}
+```
