@@ -42,3 +42,10 @@ function Game() {
 
   // ...
 ```
+
+## Two Major Issues
+
+### 1. Performance Problem
+Multiple unnecessary re-renders cascade through the component tree:
+- `setCard` → render → `setGoldCardCount` → render → `setRound` → render → `setIsGameOver` → render
+- In the worst case: **3 unnecessary re-renders** of the entire tree
