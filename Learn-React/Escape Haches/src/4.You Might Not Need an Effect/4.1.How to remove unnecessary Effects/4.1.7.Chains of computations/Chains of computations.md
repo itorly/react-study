@@ -49,3 +49,6 @@ function Game() {
 Multiple unnecessary re-renders cascade through the component tree:
 - `setCard` → render → `setGoldCardCount` → render → `setRound` → render → `setIsGameOver` → render
 - In the worst case: **3 unnecessary re-renders** of the entire tree
+
+### 2. Maintenance Problem
+The code becomes rigid and fragile as requirements evolve. Example: Adding a game history feature that sets `card` to a past value would trigger the entire Effect chain again, incorrectly updating all dependent data.
