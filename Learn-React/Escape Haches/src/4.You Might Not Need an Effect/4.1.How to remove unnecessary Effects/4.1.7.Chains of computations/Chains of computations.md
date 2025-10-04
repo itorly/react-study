@@ -85,3 +85,10 @@ function Game() {
   }
 }
 ```
+
+## Benefits
+
+- **More efficient:** No cascading re-renders
+- **More flexible:** Game history features won't trigger unwanted Effect chains
+- **Easier to maintain:** All state updates are co-located in the event handler
+- **Reusable logic:** Extract functions to share logic between event handlers
