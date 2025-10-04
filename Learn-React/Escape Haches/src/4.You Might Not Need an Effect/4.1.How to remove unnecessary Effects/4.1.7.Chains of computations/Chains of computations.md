@@ -101,3 +101,10 @@ Inside event handlers, state behaves like a snapshot. After calling `setRound(ro
 ```javascript
 const nextRound = round + 1; // Define manually
 ```
+
+### When Effect Chains ARE Appropriate
+
+Effect chains are acceptable when you're **synchronizing with external systems**, such as:
+- Multiple dropdowns where options depend on previous selections
+- Fetching data based on user selections
+- Any case where you can't calculate the next state directly in the event handler
