@@ -92,3 +92,12 @@ function Game() {
 - **More flexible:** Game history features won't trigger unwanted Effect chains
 - **Easier to maintain:** All state updates are co-located in the event handler
 - **Reusable logic:** Extract functions to share logic between event handlers
+
+## Important Notes
+
+### State as Snapshot
+Inside event handlers, state behaves like a snapshot. After calling `setRound(round + 1)`, the `round` variable still reflects the old value. If you need the next value immediately:
+
+```javascript
+const nextRound = round + 1; // Define manually
+```
