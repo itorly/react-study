@@ -12,3 +12,9 @@ function App() {
   }, []);
 }
 ```
+
+### Why This Fails
+
+- **Runs twice in development** due to Strict Mode
+- Can cause issues (e.g., invalidating auth tokens not designed for multiple calls)
+- Components should be resilient to remounting, including top-level `App`
