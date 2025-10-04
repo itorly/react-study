@@ -108,3 +108,8 @@ Effect chains are acceptable when you're **synchronizing with external systems**
 - Multiple dropdowns where options depend on previous selections
 - Fetching data based on user selections
 - Any case where you can't calculate the next state directly in the event handler
+
+## Rule of Thumb
+
+**Prefer:** Calculate during render + update in event handlers  
+**Use Effects for:** Synchronizing with external systems, not for deriving state from other state
