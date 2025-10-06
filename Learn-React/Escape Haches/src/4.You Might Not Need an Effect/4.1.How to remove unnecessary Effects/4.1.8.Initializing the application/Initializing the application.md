@@ -69,3 +69,9 @@ Code at the top level runs once when the component is imported, even if it's nev
 - Overuse top-level initialization pattern
 - Put initialization logic in arbitrary components
 - Risk slowdown or surprising behavior when importing components
+
+## Key Distinction
+
+**Once per app load** ≠ **Once per component mount**
+
+For truly one-time initialization, use module-level code or a tracked flag, not just an empty dependency array in `useEffect`.
