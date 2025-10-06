@@ -64,3 +64,8 @@ Code at the top level runs once when the component is imported, even if it's nev
 - Keep app-wide initialization logic in root component modules like `App.js`
 - Place initialization in your application's entry point
 - Use the browser check `typeof window !== 'undefined'` for client-side code
+
+### ❌ Don't
+- Overuse top-level initialization pattern
+- Put initialization logic in arbitrary components
+- Risk slowdown or surprising behavior when importing components
