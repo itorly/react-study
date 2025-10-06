@@ -57,3 +57,10 @@ function App() {
 ### How It Works
 
 Code at the top level runs once when the component is imported, even if it's never rendered.
+
+## Best Practices
+
+### ✅ Do
+- Keep app-wide initialization logic in root component modules like `App.js`
+- Place initialization in your application's entry point
+- Use the browser check `typeof window !== 'undefined'` for client-side code
