@@ -37,3 +37,19 @@ function App() {
   }, []);
 }
 ```
+
+## Solution 2: Run During Module Initialization (Preferred)
+
+Execute code before the app renders, outside any component:
+
+```javascript
+if (typeof window !== 'undefined') { // Check if we're running in the browser
+  // ✅ Only runs once per app load
+  checkAuthToken();
+  loadDataFromLocalStorage();
+}
+
+function App() {
+  // ...
+}
+```
