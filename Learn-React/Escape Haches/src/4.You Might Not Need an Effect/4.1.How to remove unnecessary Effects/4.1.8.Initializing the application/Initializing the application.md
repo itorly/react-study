@@ -53,3 +53,7 @@ function App() {
   // ...
 }
 ```
+
+### How It Works
+
+Code at the top level runs once when the component is imported, even if it's never rendered.
